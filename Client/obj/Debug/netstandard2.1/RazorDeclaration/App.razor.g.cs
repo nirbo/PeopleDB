@@ -77,7 +77,14 @@ using PeopleDB.Client.Shared;
 #nullable disable
 #nullable restore
 #line 10 "/Users/nbenor/dev/PeopleDB/Client/_Imports.razor"
-using MatBlazor;
+using MudBlazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "/Users/nbenor/dev/PeopleDB/Client/_Imports.razor"
+using MudBlazor.Dialog;
 
 #line default
 #line hidden
@@ -89,6 +96,34 @@ using MatBlazor;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 5 "/Users/nbenor/dev/PeopleDB/Client/App.razor"
+       
+    MudTheme darkTheme = new MudTheme() {
+        Palette = new Palette() {
+            Black = "#27272f",
+            Background = "#32333d",
+            BackgroundGrey = "#27272f",
+            Surface = "#373740",
+            DrawerBackground = "#27272f",
+            DrawerText = "rgba(255,255,255, 0.80)",
+            DrawerIcon = "rgba(255,255,255, 0.80)",
+            AppbarBackground = "#27272f",
+            AppbarText = "rgba(255,255,255, 0.80)",
+            TextPrimary = "rgba(255,255,255, 0.80)",
+            TextSecondary = "rgba(255,255,255, 0.50)",
+            ActionDefault = "#adadb1",
+            HoverOpacity = 0.20,
+            ActionDisabled = "rgba(255,255,255, 0.26)",
+            ActionDisabledBackground = "rgba(255,255,255, 0.12)",
+            DividerLight = "rgba(0,0,0, 0.8)",
+            Divider = "#FFFF8D",
+        },
+    };
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

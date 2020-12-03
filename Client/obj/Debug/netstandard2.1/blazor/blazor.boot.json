@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "PeopleDB.Client.dll": "sha256-cbgvLPR9E8RO4UjRfRhpMzBgWYh4X\/duSwfxM7yVMOU=",
+      "PeopleDB.Client.dll": "sha256-c5hw65w4nEFt6BKwjd0ocZ9WVU9\/RuS5XdgI+QzTRdY=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -38,18 +38,19 @@
       "System.Numerics.Vectors.dll": "sha256-qAKfFnquY+7UC\/MzLi04rjqEhLzTryCoLg\/S6MxI19I=",
       "System.Text.Encodings.Web.dll": "sha256-Tqh1Da+iTRQJEZUGAsMNFuZ4hf1PMf13WApRZod+uw4=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-O+AClmxYmKcKCv\/PvQk4tx2T7TlTwypImRCpMNwiwms=",
-      "Microsoft.AspNetCore.Components.Web.dll": "sha256-6q7n5uluNOxeOXWmdgNACFYCHlSFwLGXfvdaSx1fAJk=",
-      "Microsoft.AspNetCore.Components.Forms.dll": "sha256-FuzsEzH9sQ12Pdrqqk5WbdB+Fzy18MOe1W7UT3PW+0c=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-AV8hgKJvxEXM5wtB0rWrbSVD+jqppNW1JXqLoZhO794=",
+      "Microsoft.AspNetCore.Components.Forms.dll": "sha256-PnKO7lUOW7f4kozb+ZYmBIuHDJnrwSZKrFWmCL15nHk=",
       "System.ComponentModel.Annotations.dll": "sha256-tmnkCmP9OzLUkpQ3LP7PRosi7gt5pyfEZCM6aqAokFI=",
       "System.ComponentModel.DataAnnotations.dll": "sha256-LIfCYwg+PHltTK4z3EnbSkA7m2cn8JS4jHVthdKrDF8=",
-      "Microsoft.AspNetCore.Components.dll": "sha256-q+HGbzWFWgtjFuiEwuUR1EmwN0w0pWbg9+N+o3YLQ3A=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-A1FNAHZltX6j1uITGR2AmpE0HH1+iAQhYiPy8WEs6+A=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-158xXzg17TGmKMk8Its2Zi5awTua+JPcxgL49yWK2cI=",
-      "MatBlazor.dll": "sha256-w+DEscEPLXa2QwjGoRMEy1XDOSGPM8O3p9QFXlTiea4=",
-      "Microsoft.JSInterop.dll": "sha256-h2AapWWKHFNKXcAQwgQ\/7TS\/LA4HLtpF07O8PQq2etY=",
-      "PeopleDB.Shared.dll": "sha256-6IzrVUZ7sAzRuaUY\/oF1GacSa7JvhLNv5KeBhA5wPo4=",
+      "PeopleDB.Shared.dll": "sha256-hmWusqAws3fXTVKAwUkmiKybH8cn\/v+8M0Tat7zMVPc=",
+      "MudBlazor.dll": "sha256-sxN7QMo9vZ7lY7sjW9xnNcWCMd8Z+6dHv\/Tf\/hjPRiM=",
+      "Microsoft.Extensions.Options.dll": "sha256-9jow9vaxoUfLO97UVpFL3dZS6G3luBqhDhij5a2+7HE=",
+      "Microsoft.Extensions.Primitives.dll": "sha256-DMpuPn3obzlarJujzk3yNzcISc75h8mdbxWKEjYbDL4=",
+      "Microsoft.JSInterop.dll": "sha256-YVKMyH3AN+9RSb6NRRz7JNpG\/bR+qYX2hqVAouLpfz4=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-FJ+rEgcx6ljTxwbRXZSUGfrDKpVvOxHCSfNxbnXNn3M=",
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-1F\/wUgXS24IEcgjEtPq9GSC4I7V9f94yI+TwDe7XlMI=",
-      "Microsoft.Extensions.Primitives.dll": "sha256-DMpuPn3obzlarJujzk3yNzcISc75h8mdbxWKEjYbDL4=",
       "Microsoft.Extensions.Configuration.dll": "sha256-MTpxVvtLMleFzWKQ7a9fUjvhtN3v+POG+v9KM4KMPWk=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-G3BTXsBYgh2DQqBLYGfa5zEzFrSuDgzRnDEHJKTlN+g=",
       "Microsoft.Extensions.Configuration.Json.dll": "sha256-mQqyOIjuVduaLQ7ZyvDrChDLp8rTeQknIIWDzqsO4eY=",
@@ -58,12 +59,11 @@
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-r8LuqDQgcB\/c3E48xHqsAY1eRZB1ZtuqZF6nlufn7kg=",
       "Microsoft.Extensions.FileProviders.Abstractions.dll": "sha256-DrtNiKIMjfSOdamH5Bs5zHmjFADgNiwrY5tRgTm6XuI=",
       "Microsoft.Extensions.Logging.dll": "sha256-kn4b8eqTewTCrDhTMsoUkPZ2CVSNE32WJMSiTLfpJq4=",
-      "Microsoft.Extensions.Options.dll": "sha256-9jow9vaxoUfLO97UVpFL3dZS6G3luBqhDhij5a2+7HE=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "PeopleDB.Client.pdb": "sha256-bupC7wUC9vUT\/0MBGRDHoS6achSl2XXUe5z9cOaZQdc=",
-      "PeopleDB.Shared.pdb": "sha256-4tHAjySpEht5My0gFLiujXjg9nR8ky5FFfhUGKSEzMc="
+      "PeopleDB.Client.pdb": "sha256-4XK7CscCTicBKtpYl10kPaFPd42CLJSWtHKSLUslEEI=",
+      "PeopleDB.Shared.pdb": "sha256-XxByDb9hqqCc+syNAqcjTrUVbxhqGEELOjqYGdsGBgI="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",

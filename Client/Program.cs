@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MudBlazor;
+using MudBlazor.Services;
 
 namespace PeopleDB.Client
 {
@@ -18,6 +20,9 @@ namespace PeopleDB.Client
             builder.RootComponents.Add<App>("app");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddMudBlazorDialog();
+            builder.Services.AddMudBlazorSnackbar();
+            builder.Services.AddMudBlazorResizeListener();
 
             await builder.Build().RunAsync();
         }

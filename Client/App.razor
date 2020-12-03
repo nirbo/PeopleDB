@@ -1,4 +1,30 @@
-﻿<MatPortalHost></MatPortalHost>
+﻿<MudThemeProvider Theme="darkTheme"/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+@code {
+    MudTheme darkTheme = new MudTheme() {
+        Palette = new Palette() {
+            Black = "#27272f",
+            Background = "#32333d",
+            BackgroundGrey = "#27272f",
+            Surface = "#373740",
+            DrawerBackground = "#27272f",
+            DrawerText = "rgba(255,255,255, 0.80)",
+            DrawerIcon = "rgba(255,255,255, 0.80)",
+            AppbarBackground = "#27272f",
+            AppbarText = "rgba(255,255,255, 0.80)",
+            TextPrimary = "rgba(255,255,255, 0.80)",
+            TextSecondary = "rgba(255,255,255, 0.50)",
+            ActionDefault = "#adadb1",
+            HoverOpacity = 0.20,
+            ActionDisabled = "rgba(255,255,255, 0.26)",
+            ActionDisabledBackground = "rgba(255,255,255, 0.12)",
+            DividerLight = "rgba(0,0,0, 0.8)",
+            Divider = "#FFFF8D",
+        },
+    };
+}
 
 <Router AppAssembly="@typeof(Program).Assembly">
     <Found Context="routeData">

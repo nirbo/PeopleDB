@@ -161,7 +161,6 @@
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.pdb
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.Views.dll
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.Views.pdb
-/Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/MatBlazor.dll
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Components.dll
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.dll
@@ -227,3 +226,4 @@
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/MudBlazor.dll

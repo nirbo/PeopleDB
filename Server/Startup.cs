@@ -6,7 +6,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
-using MatBlazor;
 using Microsoft.EntityFrameworkCore;
 
 namespace PeopleDB.Server
@@ -27,7 +26,6 @@ namespace PeopleDB.Server
 
             services.AddControllersWithViews();
             services.AddRazorPages();
-            services.AddMatBlazor();
             services.AddDbContext<AppDbContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("MySqlConnection")));
         }

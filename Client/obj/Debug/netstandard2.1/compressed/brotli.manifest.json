@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/cbgvLPR9E8RO4UjRfRhpMzBgWYh4X-duSwfxM7yVMOU=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/c5hw65w4nEFt6BKwjd0ocZ9WVU9-RuS5XdgI_QzTRdY=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/PeopleDB.Client.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/PeopleDB.Client.dll.br"
     },
@@ -161,12 +161,12 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/6q7n5uluNOxeOXWmdgNACFYCHlSFwLGXfvdaSx1fAJk=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/AV8hgKJvxEXM5wtB0rWrbSVD_jqppNW1JXqLoZhO794=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.AspNetCore.Components.Web.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/FuzsEzH9sQ12Pdrqqk5WbdB_Fzy18MOe1W7UT3PW_0c=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/PnKO7lUOW7f4kozb_ZYmBIuHDJnrwSZKrFWmCL15nHk=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.AspNetCore.Components.Forms.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.br"
     },
@@ -181,7 +181,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/q_HGbzWFWgtjFuiEwuUR1EmwN0w0pWbg9_N_o3YLQ3A=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/A1FNAHZltX6j1uITGR2AmpE0HH1_iAQhYiPy8WEs6_A=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.AspNetCore.Components.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.dll.br"
     },
@@ -191,19 +191,29 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/w_DEscEPLXa2QwjGoRMEy1XDOSGPM8O3p9QFXlTiea4=.hash",
-      "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/MatBlazor.dll",
-      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/MatBlazor.dll.br"
-    },
-    {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/h2AapWWKHFNKXcAQwgQ-7TS-LA4HLtpF07O8PQq2etY=.hash",
-      "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.dll",
-      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.dll.br"
-    },
-    {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/6IzrVUZ7sAzRuaUY-oF1GacSa7JvhLNv5KeBhA5wPo4=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/hmWusqAws3fXTVKAwUkmiKybH8cn-v_8M0Tat7zMVPc=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/PeopleDB.Shared.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/PeopleDB.Shared.dll.br"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/sxN7QMo9vZ7lY7sjW9xnNcWCMd8Z_6dHv-Tf-hjPRiM=.hash",
+      "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/MudBlazor.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/MudBlazor.dll.br"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/9jow9vaxoUfLO97UVpFL3dZS6G3luBqhDhij5a2_7HE=.hash",
+      "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Options.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/DMpuPn3obzlarJujzk3yNzcISc75h8mdbxWKEjYbDL4=.hash",
+      "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Primitives.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Primitives.dll.br"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/YVKMyH3AN_9RSb6NRRz7JNpG-bR_qYX2hqVAouLpfz4=.hash",
+      "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.dll.br"
     },
     {
       "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/FJ_rEgcx6ljTxwbRXZSUGfrDKpVvOxHCSfNxbnXNn3M=.hash",
@@ -214,11 +224,6 @@
       "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/1F-wUgXS24IEcgjEtPq9GSC4I7V9f94yI_TwDe7XlMI=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.DependencyInjection.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.br"
-    },
-    {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/DMpuPn3obzlarJujzk3yNzcISc75h8mdbxWKEjYbDL4=.hash",
-      "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Primitives.dll",
-      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Primitives.dll.br"
     },
     {
       "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/MTpxVvtLMleFzWKQ7a9fUjvhtN3v_POG_v9KM4KMPWk=.hash",
@@ -261,22 +266,17 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/9jow9vaxoUfLO97UVpFL3dZS6G3luBqhDhij5a2_7HE=.hash",
-      "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.Extensions.Options.dll",
-      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
-    },
-    {
       "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.WebAssembly.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/bupC7wUC9vUT-0MBGRDHoS6achSl2XXUe5z9cOaZQdc=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/4XK7CscCTicBKtpYl10kPaFPd42CLJSWtHKSLUslEEI=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/PeopleDB.Client.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/PeopleDB.Client.pdb.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/4tHAjySpEht5My0gFLiujXjg9nR8ky5FFfhUGKSEzMc=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/XxByDb9hqqCc_syNAqcjTrUVbxhqGEELOjqYGdsGBgI=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/PeopleDB.Shared.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/PeopleDB.Shared.pdb.br"
     },
@@ -301,12 +301,12 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/0vmqj1dDChKDCT0s0Bk8zZDUeZW4BrNwavm7GhN_zS4=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/PK5X_n4kgDmHOt7YpJ0LWtRUhi5KA67X4sacczKBKNc=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/blazor.boot.json",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/TOTNP7h28PHWXcZRcgQRWLLK2P6ghOeZHnSlhepB55M=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/7hEoDFCMj4jP7G-9hfkPMHlTsnn6YuKsWKnrdLuj7og=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/service-worker-assets.js",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/service-worker-assets.js.br"
     }
