@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/MatBlazor" Path="/Users/nbenor/.nuget/packages/matblazor/2.8.0/build/../staticwebassets/" />
+  <ContentRoot BasePath="/" Path="/Users/nbenor/dev/PeopleDB/Client/bin/Debug/netstandard2.1/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/Users/nbenor/dev/PeopleDB/Client/wwwroot/" />
+</StaticWebAssets>

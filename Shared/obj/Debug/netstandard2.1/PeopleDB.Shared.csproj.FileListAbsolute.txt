@@ -1,0 +1,9 @@
+/Users/nbenor/dev/PeopleDB/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.deps.json
+/Users/nbenor/dev/PeopleDB/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.dll
+/Users/nbenor/dev/PeopleDB/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.pdb
+/Users/nbenor/dev/PeopleDB/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.csprojAssemblyReference.cache
+/Users/nbenor/dev/PeopleDB/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.AssemblyInfoInputs.cache
+/Users/nbenor/dev/PeopleDB/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.AssemblyInfo.cs
+/Users/nbenor/dev/PeopleDB/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.csproj.CoreCompileInputs.cache
+/Users/nbenor/dev/PeopleDB/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.dll
+/Users/nbenor/dev/PeopleDB/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.pdb
