@@ -16,7 +16,7 @@ namespace PeopleDB.Server.Migrations
                 .HasAnnotation("ProductVersion", "3.1.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("PeopleDB.Shared.Entities.Address", b =>
+            modelBuilder.Entity("PeopleDB.Shared.Models.Address", b =>
                 {
                     b.Property<uint>("Id")
                         .HasColumnType("int unsigned");
@@ -44,7 +44,7 @@ namespace PeopleDB.Server.Migrations
                     b.ToTable("Address");
                 });
 
-            modelBuilder.Entity("PeopleDB.Shared.Entities.Person", b =>
+            modelBuilder.Entity("PeopleDB.Shared.Models.Person", b =>
                 {
                     b.Property<uint>("Id")
                         .ValueGeneratedOnAdd()
@@ -66,7 +66,7 @@ namespace PeopleDB.Server.Migrations
                     b.ToTable("Person");
                 });
 
-            modelBuilder.Entity("PeopleDB.Shared.Entities.Pet", b =>
+            modelBuilder.Entity("PeopleDB.Shared.Models.Pet", b =>
                 {
                     b.Property<uint>("Id")
                         .HasColumnType("int unsigned");
@@ -85,7 +85,7 @@ namespace PeopleDB.Server.Migrations
                     b.ToTable("Pet");
                 });
 
-            modelBuilder.Entity("PeopleDB.Shared.Entities.Vehicle", b =>
+            modelBuilder.Entity("PeopleDB.Shared.Models.Vehicle", b =>
                 {
                     b.Property<uint>("Id")
                         .HasColumnType("int unsigned");
@@ -110,27 +110,27 @@ namespace PeopleDB.Server.Migrations
                     b.ToTable("Vehicle");
                 });
 
-            modelBuilder.Entity("PeopleDB.Shared.Entities.Address", b =>
+            modelBuilder.Entity("PeopleDB.Shared.Models.Address", b =>
                 {
-                    b.HasOne("PeopleDB.Shared.Entities.Person", "Person")
+                    b.HasOne("PeopleDB.Shared.Models.Person", "Person")
                         .WithOne("address")
-                        .HasForeignKey("PeopleDB.Shared.Entities.Address", "Id")
+                        .HasForeignKey("PeopleDB.Shared.Models.Address", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PeopleDB.Shared.Entities.Pet", b =>
+            modelBuilder.Entity("PeopleDB.Shared.Models.Pet", b =>
                 {
-                    b.HasOne("PeopleDB.Shared.Entities.Person", "Person")
+                    b.HasOne("PeopleDB.Shared.Models.Person", "Person")
                         .WithMany("pets")
                         .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PeopleDB.Shared.Entities.Vehicle", b =>
+            modelBuilder.Entity("PeopleDB.Shared.Models.Vehicle", b =>
                 {
-                    b.HasOne("PeopleDB.Shared.Entities.Person", "Person")
+                    b.HasOne("PeopleDB.Shared.Models.Person", "Person")
                         .WithMany("vehicles")
                         .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)

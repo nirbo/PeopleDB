@@ -1,0 +1,62 @@
+@page "/person"
+@inject HttpClient http
+
+<MudTable Items="@allPersons" Hover="true" Elevation="10" FixedHeader="true" Class="ma-4 pa-8" Filter="new Func<Person,bool>(SearchFilter)">
+    <ToolBarContent>
+        <MudText Typo="Typo.h4">All Persons</MudText>
+        <MudToolBarSpacer />
+        <MudTextField @bind-Value="search_string" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh>First Name</MudTh>
+        <MudTh>Last Name</MudTh>
+        <MudTh>SIN</MudTh>
+        <MudTh>Address</MudTh>
+        <MudTh>Pets</MudTh>
+        <MudTh>Vehicles</MudTh>
+        <MudTh>Actions</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="First Name"></MudTd>
+        <MudTd DataLabel="Last Name"></MudTd>
+        <MudTd DataLabel="SIN"></MudTd>
+        <MudTd DataLabel="Address"></MudTd>
+        <MudTd DataLabel="Pets"></MudTd>
+        <MudTd DataLabel="Vehicles"></MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager PageSizeOptions="new int[] {10, 25}"/>
+    </PagerContent>
+</MudTable>
+
+@if (allPersons == null) {
+    <MudText>Loading allPersons...</MudText>
+} else if (allPersons.Count == 0) {
+    <MudText>DB is Empty</MudText>
+}
+
+@code {
+    List<Person> allPersons { get; set; }
+
+    protected override async Task OnInitializedAsync() {
+        allPersons = new List<Person>();
+        allPersons = await http.GetFromJsonAsync<List<Person>>("api/person");
+    }
+}
+
+@code {
+    string search_string = "";
+
+    bool SearchFilter(Person filteredPerson)
+    {
+        if (string.IsNullOrWhiteSpace(search_string))
+            return true;
+        if (filteredPerson.firstName.Contains(search_string))
+            return true;
+        if (filteredPerson.lastName.Contains(search_string))
+            return true;
+        if (filteredPerson.sin.ToString().Contains(search_string))
+            return true;
+        return false;
+    }
+}

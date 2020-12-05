@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8Tb4/KJzYeD9sFFEKqsCuK77S2LhalNtoFzmrtB4qX2izNDmmVcQnC2YVEqRNwwWzwi5vC+MrlVJfO/kP6AZzQ==",
+  "dgSpecHash": "vcqH9QUMq1dPTQD0Xxu1ZZj6VNjnRkvLxSPoxayWOn8KsXMXPidrxgWPFKr8Db+J3xwNzq5BwMrwNGwQeE3IIA==",
   "success": true,
   "projectFilePath": "/Users/nbenor/dev/PeopleDB/Client/PeopleDB.Client.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,7 @@
     "/Users/nbenor/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.6/microsoft.extensions.fileproviders.abstractions.3.1.6.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.fileproviders.physical/3.1.6/microsoft.extensions.fileproviders.physical.3.1.6.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.filesystemglobbing/3.1.6/microsoft.extensions.filesystemglobbing.3.1.6.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/microsoft.extensions.http/3.1.10/microsoft.extensions.http.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.logging/3.1.10/microsoft.extensions.logging.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.10/microsoft.extensions.logging.abstractions.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.options/3.1.10/microsoft.extensions.options.3.1.10.nupkg.sha512",

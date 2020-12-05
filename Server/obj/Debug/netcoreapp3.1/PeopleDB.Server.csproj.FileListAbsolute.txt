@@ -227,3 +227,4 @@
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
 /Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/MudBlazor.dll
+/Users/nbenor/dev/PeopleDB/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Http.dll

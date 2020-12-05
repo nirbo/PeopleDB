@@ -6,12 +6,16 @@
         @* <MudIconButton Icon="@Icons.Material.AccountCircle" Color="Color.Inherit" Link="#" Target="_blank"/> *@
     </MudAppBar>
     <MudDrawer Open="true" Elevation="1">
-        <MudDrawerHeader>
-            <MudText Typo="Typo.h5" Align="Align.Center">PeopleDB</MudText>
+        <MudDrawerHeader LinkToIndex="true">
+            <MudText Typo="Typo.h5">PeopleDB</MudText>
         </MudDrawerHeader>
         <MudNavMenu>
-            <MudNavLink Href="/" Icon="@Icons.Material.Home">Home</MudNavLink>
-            <MudNavLink Href="/counter" Icon="@Icons.Material.Dashboard">Dashboard</MudNavLink>
+            <MudNavGroup Title="Databases" Icon="@Icons.Material.Dashboard" Expanded="true">
+                <MudNavLink Href="/person" Icon="@Icons.Material.Person">Person Table</MudNavLink>
+                <MudNavLink Href="/address" Icon="@Icons.Material.LocationOn">Address Table</MudNavLink>
+                <MudNavLink Href="/pet" Icon="@Icons.Material.Pets">Pet Table</MudNavLink>
+                <MudNavLink Href="/vehicle" Icon="@Icons.Material.DirectionsCar">Vehicle Table</MudNavLink>
+            </MudNavGroup>
         </MudNavMenu>
     </MudDrawer>
     <MudMainContent>

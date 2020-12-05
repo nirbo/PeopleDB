@@ -11,6 +11,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "3.1.10",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.10",
+          "Microsoft.Extensions.Http": "3.1.10",
           "MudBlazor": "1.1.5"
         },
         "runtime": {
@@ -235,6 +236,19 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.10": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "3.1.10.0",
+            "fileVersion": "3.100.1020.51904"
+          }
+        }
+      },
+      "Microsoft.Extensions.Http/3.1.10": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.10",
+          "Microsoft.Extensions.Logging": "3.1.10",
+          "Microsoft.Extensions.Options": "3.1.10"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.dll": {
             "assemblyVersion": "3.1.10.0",
             "fileVersion": "3.100.1020.51904"
           }
@@ -574,6 +588,13 @@
       "sha512": "sha512-bhjtAN7Ix5WOAr47RK16Lr1l2eizSBMCYQSavkooZyf6Xdf8XWAYGWsGsPqUFOeeRxzhpRho051rXaLn5wskVw==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.10",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.10.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Http/3.1.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zE8qNx0w07GJBbjOUfnrsT/MSImlT+kARd6zIYi+0lU6sXA9p33RQynsdSwmY5WnXlTp+w3JVKxXzok4BswlmQ==",
+      "path": "microsoft.extensions.http/3.1.10",
+      "hashPath": "microsoft.extensions.http.3.1.10.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/3.1.10": {
       "type": "package",

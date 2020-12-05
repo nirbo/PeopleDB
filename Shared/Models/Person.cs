@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
-namespace PeopleDB.Shared.Entities {
+namespace PeopleDB.Shared.Models {
     [Table("Person")]
     public class Person {
         
@@ -15,8 +17,11 @@ namespace PeopleDB.Shared.Entities {
         [Required]
         public uint sin { get; set; }
         
+        [AllowNull]
         public Address address { get; set; }
+        [AllowNull]
         public ICollection<Vehicle> vehicles { get; set; }
+        [AllowNull]
         public ICollection<Pet> pets { get; set; }
     }
 }

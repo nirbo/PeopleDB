@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using PeopleDB.Shared.Entities;
+using PeopleDB.Shared.Models;
 
 namespace PeopleDB.Server {
     public class AppDbContext : DbContext {

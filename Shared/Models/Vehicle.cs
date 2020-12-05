@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PeopleDB.Shared.Entities {
+namespace PeopleDB.Shared.Models {
     [Table("Vehicle")]
     public class Vehicle {
         

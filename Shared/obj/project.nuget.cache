@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "n4xLRP/TxAj1D5jplSu82gvSEE1iA7no6Tb3loedBjbdIlN3ieUJWQ3GPVRIM+m6HUKUb5XZg2zLEf6ZmaeBlQ==",
+  "dgSpecHash": "e+G3qPkX+aUGbM0Fm7qi5lpFnxIX0h1pw7IPkVOaxao1ecogdUHcGkWrGaQejA5Wl8HKFk7N9P7Kh2UPzCo7jQ==",
   "success": true,
   "projectFilePath": "/Users/nbenor/dev/PeopleDB/Shared/PeopleDB.Shared.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "/Users/nbenor/.nuget/packages/microsoft.extensions.configuration.binder/3.1.10/microsoft.extensions.configuration.binder.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.10/microsoft.extensions.dependencyinjection.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.10/microsoft.extensions.dependencyinjection.abstractions.3.1.10.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/microsoft.extensions.http/3.1.10/microsoft.extensions.http.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.logging/3.1.10/microsoft.extensions.logging.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.10/microsoft.extensions.logging.abstractions.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.extensions.options/3.1.10/microsoft.extensions.options.3.1.10.nupkg.sha512",

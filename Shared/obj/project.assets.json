@@ -213,7 +213,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.10"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
@@ -225,7 +225,7 @@
           "Microsoft.Extensions.Primitives": "3.1.10"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
@@ -237,7 +237,7 @@
           "Microsoft.Extensions.Configuration": "3.1.10"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
@@ -264,6 +264,20 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Http/3.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.10",
+          "Microsoft.Extensions.Logging": "3.1.10",
+          "Microsoft.Extensions.Options": "3.1.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.dll": {}
+        }
+      },
       "Microsoft.Extensions.Logging/3.1.10": {
         "type": "package",
         "dependencies": {
@@ -273,7 +287,7 @@
           "Microsoft.Extensions.Options": "3.1.10"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
@@ -894,6 +908,22 @@
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
+    "Microsoft.Extensions.Http/3.1.10": {
+      "sha512": "zE8qNx0w07GJBbjOUfnrsT/MSImlT+kARd6zIYi+0lU6sXA9p33RQynsdSwmY5WnXlTp+w3JVKxXzok4BswlmQ==",
+      "type": "package",
+      "path": "microsoft.extensions.http/3.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Http.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.xml",
+        "microsoft.extensions.http.3.1.10.nupkg.sha512",
+        "microsoft.extensions.http.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Logging/3.1.10": {
       "sha512": "GjP+4cUFdsNk/Px6BlJ7p7x7ibpawcaAV4tfrRJTv2s6Nb7yz5OEKA0kbNl1ZXKa6uMQzbNqc5+B/tJsqzgIXg==",
       "type": "package",
@@ -1350,6 +1380,7 @@
     ".NETStandard,Version=v2.1": [
       "Microsoft.EntityFrameworkCore.Design >= 3.1.10",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.10",
+      "Microsoft.Extensions.Http >= 3.1.10",
       "MudBlazor >= 1.1.5"
     ]
   },
@@ -1399,6 +1430,10 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.1.10, )"
+          },
+          "Microsoft.Extensions.Http": {
             "target": "Package",
             "version": "[3.1.10, )"
           },

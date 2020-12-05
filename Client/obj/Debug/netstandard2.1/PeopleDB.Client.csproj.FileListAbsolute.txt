@@ -164,7 +164,6 @@
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/PeopleDB.Client.csproj.CoreCompileInputs.cache
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorComponent.input.cache
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/RazorDeclaration/App.razor.g.cs
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Counter.razor.g.cs
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/FetchData.razor.g.cs
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Index.razor.g.cs
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/MainLayout.razor.g.cs
@@ -177,7 +176,6 @@
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/PeopleDB.Client.TagHelpers.output.cache
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorCoreGenerate.cache
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/Razor/App.razor.g.cs
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/Razor/Pages/Counter.razor.g.cs
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/Razor/Pages/FetchData.razor.g.cs
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/Razor/Pages/Index.razor.g.cs
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/Razor/Shared/MainLayout.razor.g.cs
@@ -387,11 +385,14 @@
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/AV8hgKJvxEXM5wtB0rWrbSVD_jqppNW1JXqLoZhO794=.hash
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/PnKO7lUOW7f4kozb_ZYmBIuHDJnrwSZKrFWmCL15nHk=.hash
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/A1FNAHZltX6j1uITGR2AmpE0HH1_iAQhYiPy8WEs6_A=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/hmWusqAws3fXTVKAwUkmiKybH8cn-v_8M0Tat7zMVPc=.hash
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/YVKMyH3AN_9RSb6NRRz7JNpG-bR_qYX2hqVAouLpfz4=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/XxByDb9hqqCc_syNAqcjTrUVbxhqGEELOjqYGdsGBgI=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/c5hw65w4nEFt6BKwjd0ocZ9WVU9-RuS5XdgI_QzTRdY=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/4XK7CscCTicBKtpYl10kPaFPd42CLJSWtHKSLUslEEI=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/PK5X_n4kgDmHOt7YpJ0LWtRUhi5KA67X4sacczKBKNc=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/nNpaXF7yUJQN4R45hf9-S0mVpTX6cX3WOLawbzpE5_k=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/7hEoDFCMj4jP7G-9hfkPMHlTsnn6YuKsWKnrdLuj7og=.hash
+/Users/nbenor/dev/PeopleDB/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.Http.dll
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Persons.razor.g.cs
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/Razor/Pages/Persons.razor.g.cs
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/OkWMSVXembpRjccCcECG390J0dlt0gq8gQQCNukm5Hk=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/XL1xcYORO4GiLvEhxTJjnln-gW8JpQtgHIEnAnr0qqw=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/HeMVebqlv5cQtnYM7WAM3NkHgxWCs7xSY9Sr78Vj_Bc=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/Lhqe0WxpjCmEXaEwtlbidlhV0TRGm77brUQ73VNseZA=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/l4vzZZ184pHqYXiOcKuRA61xva7vO4kajrtkHwQjZVU=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/8ehBZunSVk78qEgfsbkPBJq09g9zSpQVl3tZvvUB-9g=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/KW6-pkaFU5bWOOnzvFfl3NSBqinOr4qcay__BnRW7H8=.hash
