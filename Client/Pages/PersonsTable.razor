@@ -1,17 +1,19 @@
 @page "/person"
 @inject HttpClient http
+@inject IDialogService Dialog
 
 @if (AllPersons.Count == 0) {
-    <MudPaper Class="d-flex flex-column align-center justify-center py-2 px-1 lighten-3" Elevation="12" Style="background-color: #3C3C43; height: 25%; width: 25%; margin-left: 37.5%; margin-top: 20%;">
+    <MudPaper Class="d-flex flex-column align-center justify-center py-2 px-1 table-loading-mudpaper" Elevation="12">
         <MudText Typo="Typo.h5" Align="Align.Center">Loading Table Data...</MudText>
         <MudProgressCircular Color="Color.Primary" Indeterminate="true" Class="mt-6 pa-2 mx-2 align-self-center"/>
     </MudPaper>
-} else {
-    <MudTable Items="@AllPersons" Hover="true" Elevation="10" FixedHeader="true" Class="ma-4 pa-8" Filter="new Func<Person,bool>(SearchFilter)">
+}
+else {
+    <MudTable Items="@AllPersons" Hover="true" Elevation="10" FixedHeader="true" Class="ma-4 pa-8" Filter="new Func<Person, bool>(SearchFilter)">
         <ToolBarContent>
-            <MudText Typo="Typo.h4">Person Table</MudText>
-            <MudToolBarSpacer />
-            <MudTextField @bind-Value="search_string" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+            <MudButton Color="Color.Success" Size="Size.Large" StartIcon="@Filled.Add" Link="/person/new">Add Person</MudButton>
+            <MudToolBarSpacer/>
+            <MudTextField @bind-Value="search_string" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
         </ToolBarContent>
         <HeaderContent>
             <MudTh>First Name</MudTh>
@@ -32,7 +34,7 @@
             <MudTd DataLabel="Actions"></MudTd>
         </RowTemplate>
         <PagerContent>
-            <MudTablePager PageSizeOptions="new int[] {10, 25}"/>
+            <MudTablePager PageSizeOptions="new[] {10, 25}"/>
         </PagerContent>
     </MudTable>
 }
@@ -43,13 +45,13 @@
     protected override async Task OnInitializedAsync() {
         AllPersons = await http.GetFromJsonAsync<List<Person>>("Person/GetAll");
     }
+
 }
 
 @code {
-    string search_string = "";
+    private string search_string = "";
 
-    bool SearchFilter(Person filteredPerson)
-    {
+    bool SearchFilter(Person filteredPerson) {
         if (string.IsNullOrWhiteSpace(search_string))
             return true;
         if (filteredPerson.firstName.Contains(search_string))
@@ -60,4 +62,5 @@
             return true;
         return false;
     }
+
 }

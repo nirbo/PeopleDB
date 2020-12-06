@@ -1,0 +1,69 @@
+@page "/person/new"
+@inject HttpClient http
+
+<MudPaper Class="d-flex flex-column ma-4 pa-8" Elevation="12" Style="height: 100%;">
+    <MudText Typo="Typo.h5" Align="Align.Center" Class="my-4">Personal Details</MudText>
+    <MudCard Elevation="0" Style="width: 50%;" Class="align-self-center">
+        <EditForm Model="@person" OnValidSubmit="personValidSubmit">
+            <DataAnnotationsValidator/>
+            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="First Name" @bind-Value="person.firstName" For="@(() => person.firstName)" Immediate="true" Required="true"/>
+            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Last Name" @bind-Value="person.lastName" For="@(() => person.lastName)" Immediate="true" Required="true"/>
+            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="SIN" @bind-Value="person.sin" For="@(() => person.sin)" ErrorText="Only Digits Allowed" Immediate="true" Required="true"/>
+        </EditForm>
+        
+        <MudText Typo="Typo.h5" Align="Align.Center" Class="mb-4 mt-16">Address</MudText>
+        <EditForm Model="@address" OnValidSubmit="addressValidSubmit">
+            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 1" @bind-Value="address.Address1" For="@(() => address.Address1)" Immediate="true" Required="true"/>
+            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 2" @bind-Value="address.Address2" For="@(() => address.Address2)"/>
+            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="City" @bind-Value="address.City" For="@(() => address.City)" Immediate="true" Required="true"/>
+            <MudSelect Class="my-1" T="string" Label="Province" Variant="Variant.Outlined" Immediate="true" Required="true" OffsetY="true" Dense="true">
+                @if (canadaProvinces != null) {
+                    foreach (string province in canadaProvinces) {
+                        <MudSelectItem Value="@(province)"/>
+                    }
+                }
+            </MudSelect>
+            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Country" @bind-Value="address.Country" For="@(() => address.Country)" Immediate="true" Required="true"/>
+            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Postal Code" @bind-Value="address.PostalCode" For="@(() => address.PostalCode)" Immediate="true" Required="true"/>
+        </EditForm>
+    </MudCard>
+    <MudCardActions Class="px-0 my-4 align-self-center justify-end" Style="width: 50%;">
+        <MudButton Variant="Variant.Filled" Size="Size.Large" Color="Color.Success" Disabled="@(!success)">Save Person</MudButton>
+    </MudCardActions>
+</MudPaper>
+
+@code {
+    Person person = new Person();
+    Address address = new Address();
+    bool success;
+    
+    private void personValidSubmit(EditContext context) {
+        context.Validate();
+        
+        success = true;
+    }
+
+    private void addressValidSubmit(EditContext context) {
+        context.Validate();
+        
+        success = true;
+    }
+}
+
+@code {
+    List<string> canadaProvinces = new List<string> {
+        "Alberta",
+        "British Columbia",
+        "Manitoba",
+        "New Brunswick",
+        "Newfoundlands and Labrador",
+        "Northwest Territories",
+        "Nova Scotia",
+        "Nunavut",
+        "Ontario",
+        "Prince Edward Island",
+        "Quebec",
+        "Saskatchewan",
+        "Yukon"
+    };
+}

@@ -14,9 +14,9 @@
           </e>
         </e>
         <e p="Pages" t="Include">
-          <e p="FetchData.razor" t="Include" />
           <e p="Index.razor" t="Include" />
-          <e p="Persons.razor" t="Include" />
+          <e p="NewPerson.razor" t="Include" />
+          <e p="PersonsTable.razor" t="Include" />
         </e>
         <e p="PeopleDB.Client.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
@@ -25,8 +25,6 @@
         </e>
         <e p="Shared" t="Include">
           <e p="MainLayout.razor" t="Include" />
-          <e p="NavMenu.razor" t="Include" />
-          <e p="SurveyPrompt.razor" t="Include" />
         </e>
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
@@ -66,7 +64,6 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="PersonController.cs" t="Include" />
-          <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
           <e p="20201203014248_InitialMigration.cs" t="Include" />
@@ -104,6 +101,19 @@
         <e p="Context" t="Include">
           <e p="AppDbContext.cs" t="Include" />
         </e>
+        <e p="Migrations" t="Include">
+          <e p="20201203014248_InitialMigration.cs" t="Include" />
+          <e p="20201203014248_InitialMigration.Designer.cs" t="Include" />
+          <e p="20201203014600_TablesRenamed.cs" t="Include" />
+          <e p="20201203014600_TablesRenamed.Designer.cs" t="Include" />
+          <e p="20201205044555_PersonAllowNullFK.cs" t="Include" />
+          <e p="20201205044555_PersonAllowNullFK.Designer.cs" t="Include" />
+          <e p="20201206071436_UpdateModelMaxLengths.cs" t="Include" />
+          <e p="20201206071436_UpdateModelMaxLengths.Designer.cs" t="Include" />
+          <e p="20201206072046_UpdateModelMaxLengthsFix.cs" t="Include" />
+          <e p="20201206072046_UpdateModelMaxLengthsFix.Designer.cs" t="Include" />
+          <e p="AppDbContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="Address.cs" t="Include" />
           <e p="Person.cs" t="Include" />
@@ -122,7 +132,6 @@
           <e p="IPersonRepository.cs" t="Include" />
           <e p="PersonRepository.cs" t="Include" />
         </e>
-        <e p="WeatherForecast.cs" t="Include" />
       </e>
     </e>
     <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />

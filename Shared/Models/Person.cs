@@ -10,14 +10,13 @@ namespace PeopleDB.Shared.Models {
         
         [Key]
         public uint Id { get; set; }
-        [Required(ErrorMessage = "Mandatory Field")]
+        [Required(ErrorMessage = "Mandatory Field"), MaxLength(70)]
         public string firstName { get; set; }
-        [Required(ErrorMessage = "Mandatory Field")]
+        [Required(ErrorMessage = "Mandatory Field"), MaxLength(70)]
         public string lastName { get; set; }
-        [Required(ErrorMessage = "Mandatory Field")]
+        [Required(ErrorMessage = "Mandatory Field"), MaxLength(9)]
         public uint sin { get; set; }
         
-        [AllowNull]
         public Address address { get; set; }
         [AllowNull]
         public ICollection<Vehicle> vehicles { get; set; }
