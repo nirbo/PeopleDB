@@ -882,9 +882,11 @@
       "PeopleDB.Client/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly": "3.2.1",
+          "Microsoft.EntityFrameworkCore": "3.1.10",
           "Microsoft.Extensions.Http": "3.1.10",
           "MudBlazor": "1.1.5",
           "PeopleDB.Shared": "1.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "3.2.4",
           "System.Net.Http.Json": "3.2.0"
         },
         "runtime": {
@@ -896,8 +898,10 @@
       },
       "PeopleDB.Shared/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.10",
           "Microsoft.Extensions.Http": "3.1.10",
-          "MudBlazor": "1.1.5"
+          "MudBlazor": "1.1.5",
+          "Pomelo.EntityFrameworkCore.MySql": "3.2.4"
         },
         "runtime": {
           "PeopleDB.Shared.dll": {}

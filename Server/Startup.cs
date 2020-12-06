@@ -4,23 +4,21 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PeopleDB.Server.Controllers;
+using PeopleDB.Shared.Context;
+using PeopleDB.Shared.Repository;
 
 namespace PeopleDB.Server
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
+        public Startup(IConfiguration configuration) {
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
         
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddCors(policy =>
-            {
+        public void ConfigureServices(IServiceCollection services) {
+            services.AddCors(policy => {
                 policy.AddPolicy("CorsPolicy", opt => opt
                     .AllowAnyOrigin()
                     .AllowAnyHeader()
@@ -31,17 +29,14 @@ namespace PeopleDB.Server
             services.AddRazorPages();
             services.AddDbContext<AppDbContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("MySqlConnection")));
+            services.AddTransient<IPersonRepository, PersonRepository>();
         }
         
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
+            if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
                 app.UseWebAssemblyDebugging();
-            }
-            else
-            {
+            } else {
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
@@ -53,8 +48,7 @@ namespace PeopleDB.Server
             app.UseRouting();
             app.UseCors("CorsPolicy");
 
-            app.UseEndpoints(endpoints =>
-            {
+            app.UseEndpoints(endpoints => {
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
                 endpoints.MapFallbackToFile("index.html");

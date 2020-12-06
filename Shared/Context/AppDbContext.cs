@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PeopleDB.Shared.Models;
 
-namespace PeopleDB.Server {
+namespace PeopleDB.Shared.Context {
     public class AppDbContext : DbContext {
         
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }

@@ -10,11 +10,11 @@ namespace PeopleDB.Shared.Models {
         
         [Key]
         public uint Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Mandatory Field")]
         public string firstName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Mandatory Field")]
         public string lastName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Mandatory Field")]
         public uint sin { get; set; }
         
         [AllowNull]

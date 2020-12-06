@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeopleDB.Server;
+using PeopleDB.Shared.Context;
 
 namespace PeopleDB.Server.Migrations
 {

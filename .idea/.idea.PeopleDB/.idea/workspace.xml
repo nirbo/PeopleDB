@@ -24,8 +24,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca694538-8c16-446a-bea0-a412ecf89400" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Client/Pages/Persons.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Pages/Counter.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PeopleDB/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PeopleDB/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PeopleDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PeopleDB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Pages/Persons.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/Persons.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/PeopleDB.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Client/PeopleDB.Client.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Shared/MainLayout.razor" afterDir="false" />
@@ -47,9 +50,6 @@
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorComponent.input.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorComponent.input.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorCoreGenerate.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.TagHelpers.output.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.csproj.FileListAbsolute.txt" afterDir="false" />
@@ -57,7 +57,6 @@
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/App.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/App.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/Counter.razor.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/FetchData.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/FetchData.razor.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/Index.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/Index.razor.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/MainLayout.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/MainLayout.razor.g.cs" afterDir="false" />
@@ -65,7 +64,6 @@
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/SurveyPrompt.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/SurveyPrompt.razor.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/_Imports.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/_Imports.razor.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/App.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/App.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Counter.razor.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/FetchData.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/FetchData.razor.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Index.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Index.razor.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/PeopleDB.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/PeopleDB.Client.dll" afterDir="false" />
@@ -92,24 +90,19 @@
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/brotli.manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/brotli.manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/gzip.manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/gzip.manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/service-worker-assets.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/service-worker-assets.js.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/4XK7CscCTicBKtpYl10kPaFPd42CLJSWtHKSLUslEEI=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/7hEoDFCMj4jP7G-9hfkPMHlTsnn6YuKsWKnrdLuj7og=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/PK5X_n4kgDmHOt7YpJ0LWtRUhi5KA67X4sacczKBKNc=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/XxByDb9hqqCc_syNAqcjTrUVbxhqGEELOjqYGdsGBgI=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/c5hw65w4nEFt6BKwjd0ocZ9WVU9-RuS5XdgI_QzTRdY=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/hmWusqAws3fXTVKAwUkmiKybH8cn-v_8M0Tat7zMVPc=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/nNpaXF7yUJQN4R45hf9-S0mVpTX6cX3WOLawbzpE5_k=.hash" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/staticwebassets/PeopleDB.Client.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/staticwebassets/PeopleDB.Client.StaticWebAssets.Manifest.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/PeopleDB.Client.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/PeopleDB.Client.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/wwwroot/css/peopledb.css" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/css/peopledb.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Context/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Controllers/PersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Controllers/PersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Migrations/20201203014248_InitialMigration.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Migrations/20201203014248_InitialMigration.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Migrations/20201203014600_TablesRenamed.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Migrations/20201203014600_TablesRenamed.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Migrations/20201205044555_PersonAllowNullFK.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Migrations/20201205044555_PersonAllowNullFK.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/PeopleDB.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server/PeopleDB.Server.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Client.pdb" afterDir="false" />
@@ -120,12 +113,9 @@
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Shared.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Shared.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.TagHelpers.output.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.pdb" afterDir="false" />
@@ -133,12 +123,8 @@
       <change beforePath="$PROJECT_DIR$/Server/obj/PeopleDB.Server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/PeopleDB.Server.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Entities/Address.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Models/Address.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Entities/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Models/Person.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Entities/Pet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Models/Pet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Entities/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Models/Vehicle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/Models/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Models/Person.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shared/PeopleDB.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/PeopleDB.Shared.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.dll" afterDir="false" />
@@ -172,9 +158,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9D56523B-A5D8-4D7C-ADD7-5E931607209B/97/b582354a/MudLayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9D56523B-A5D8-4D7C-ADD7-5E931607209B/41/ac111359/BaseMudThemeProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5828A57D-F620-465E-B29A-840ED0613DCB/4/HttpClientJsonExtensions.Get.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9D56523B-A5D8-4D7C-ADD7-5E931607209B/bb/45b3150a/MudTheme.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/9D56523B-A5D8-4D7C-ADD7-5E931607209B/ed/fd006992/020000B6.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shared/Repository/IPersonRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9D56523B-A5D8-4D7C-ADD7-5E931607209B/44/3caf9275/Palette.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shared/Repository/PersonRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9D56523B-A5D8-4D7C-ADD7-5E931607209B/1f/8f7ed30b/MudTable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shared/Models/Person.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shared/Context/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -187,26 +179,31 @@
         <option value="$PROJECT_DIR$/Server/AppDbContext.cs" />
         <option value="$PROJECT_DIR$/Server/Pages/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/Client/wwwroot/css/app.css" />
-        <option value="$PROJECT_DIR$/Client/wwwroot/css/peopledb.css" />
-        <option value="$PROJECT_DIR$/Client/App.razor" />
-        <option value="$PROJECT_DIR$/Client/Pages/Index.razor" />
         <option value="$PROJECT_DIR$/Client/wwwroot/index.html" />
-        <option value="$PROJECT_DIR$/Client/Shared/MainLayout.razor" />
         <option value="$PROJECT_DIR$/Client/Pages/Person/Create.razor" />
         <option value="$PROJECT_DIR$/Client/Pages/Person/Edit.razor" />
         <option value="$PROJECT_DIR$/Client/Pages/Person/FetchData.razor" />
         <option value="$PROJECT_DIR$/Server/Controllers/PersonConroller.cs" />
         <option value="$PROJECT_DIR$/Shared/Models/Address.cs" />
-        <option value="$PROJECT_DIR$/Client/_Imports.razor" />
         <option value="$PROJECT_DIR$/Server/Program.cs" />
         <option value="$PROJECT_DIR$/Shared/Interfaces/IRepositoryBase.cs" />
         <option value="$PROJECT_DIR$/Shared/Repository/RepositoryBase.cs" />
         <option value="$PROJECT_DIR$/Client/Pages/PersonTable.razor" />
+        <option value="$PROJECT_DIR$/Shared/Repository/IPersonRepository.cs" />
+        <option value="$PROJECT_DIR$/Server/Repository/PersonRepository.cs" />
+        <option value="$PROJECT_DIR$/Shared/AppDbContext.cs" />
+        <option value="$PROJECT_DIR$/Server/Controllers/PersonController.cs" />
+        <option value="$PROJECT_DIR$/Shared/Models/Person.cs" />
+        <option value="$PROJECT_DIR$/Client/_Imports.razor" />
+        <option value="$PROJECT_DIR$/Shared/Context/AppDbContext.cs" />
+        <option value="$PROJECT_DIR$/Client/App.razor" />
+        <option value="$PROJECT_DIR$/Shared/Repository/PersonRepository.cs" />
         <option value="$PROJECT_DIR$/Server/Startup.cs" />
         <option value="$PROJECT_DIR$/Client/Program.cs" />
-        <option value="$PROJECT_DIR$/Shared/Models/Person.cs" />
+        <option value="$PROJECT_DIR$/Client/wwwroot/css/peopledb.css" />
+        <option value="$PROJECT_DIR$/Client/Shared/MainLayout.razor" />
+        <option value="$PROJECT_DIR$/Client/Pages/Index.razor" />
         <option value="$PROJECT_DIR$/Client/Pages/Persons.razor" />
-        <option value="$PROJECT_DIR$/Server/Controllers/PersonController.cs" />
       </list>
     </option>
   </component>
@@ -224,6 +221,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35023773" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30005282" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -231,7 +230,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.PeopleDB.Client: IIS Express">
+  <component name="RunManager" selected=".NET Launch Settings Profile.PeopleDB.Server">
     <configuration name="PeopleDB.Client: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Client/PeopleDB.Client.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETStandard,Version=v2.1" />
@@ -292,6 +291,12 @@
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.PeopleDB.Client: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.PeopleDB.Client: PeopleDB" />
+      <item itemvalue=".NET Launch Settings Profile.PeopleDB.Server" />
+      <item itemvalue=".NET Launch Settings Profile.PeopleDB.Server: IIS Express" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -307,7 +312,8 @@
       <workItem from="1606961659019" duration="18573000" />
       <workItem from="1607035935278" duration="3055000" />
       <workItem from="1607046538590" duration="10791000" />
-      <workItem from="1607125179303" duration="12985000" />
+      <workItem from="1607125179303" duration="20319000" />
+      <workItem from="1607154740622" duration="12196000" />
     </task>
     <servers />
   </component>
@@ -332,10 +338,94 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2019" y="271" key="RiderGenerateDialog" timestamp="1607126986519">
+    <state x="1789" y="235" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607159308746">
       <screen x="0" y="23" width="3440" height="1347" />
     </state>
-    <state x="2019" y="271" key="RiderGenerateDialog/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607126986519" />
+    <state x="1789" y="235" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159308746" />
+    <state width="1924" height="446" key="GridCell.Tab.0.bottom" timestamp="1607159519417">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.0.bottom/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519417" />
+    <state width="1924" height="446" key="GridCell.Tab.0.center" timestamp="1607159519417">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.0.center/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519417" />
+    <state width="1924" height="446" key="GridCell.Tab.0.left" timestamp="1607159519416">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.0.left/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519416" />
+    <state width="1924" height="446" key="GridCell.Tab.0.right" timestamp="1607159519417">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.0.right/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519417" />
+    <state width="1924" height="446" key="GridCell.Tab.1.bottom" timestamp="1607159519418">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.1.bottom/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519418" />
+    <state width="1924" height="446" key="GridCell.Tab.1.center" timestamp="1607159519418">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.1.center/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519418" />
+    <state width="1924" height="446" key="GridCell.Tab.1.left" timestamp="1607159519418">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.1.left/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519418" />
+    <state width="1924" height="446" key="GridCell.Tab.1.right" timestamp="1607159519418">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.1.right/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519418" />
+    <state width="1924" height="446" key="GridCell.Tab.2.bottom" timestamp="1607159519419">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.2.bottom/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519419" />
+    <state width="1924" height="446" key="GridCell.Tab.2.center" timestamp="1607159519419">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.2.center/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519419" />
+    <state width="1924" height="446" key="GridCell.Tab.2.left" timestamp="1607159519419">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.2.left/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519419" />
+    <state width="1924" height="446" key="GridCell.Tab.2.right" timestamp="1607159519419">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.2.right/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519419" />
+    <state width="1924" height="446" key="GridCell.Tab.3.bottom" timestamp="1607159519420">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.3.bottom/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519420" />
+    <state width="1924" height="446" key="GridCell.Tab.3.center" timestamp="1607159519420">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.3.center/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519420" />
+    <state width="1924" height="446" key="GridCell.Tab.3.left" timestamp="1607159519420">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.3.left/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519420" />
+    <state width="1924" height="446" key="GridCell.Tab.3.right" timestamp="1607159519420">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.3.right/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519420" />
+    <state width="1924" height="446" key="GridCell.Tab.4.bottom" timestamp="1607159519421">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.4.bottom/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519421" />
+    <state width="1924" height="446" key="GridCell.Tab.4.center" timestamp="1607159519421">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.4.center/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519421" />
+    <state width="1924" height="446" key="GridCell.Tab.4.left" timestamp="1607159519421">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.4.left/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519421" />
+    <state width="1924" height="446" key="GridCell.Tab.4.right" timestamp="1607159519421">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state width="1924" height="446" key="GridCell.Tab.4.right/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607159519421" />
+    <state x="2019" y="271" key="RiderGenerateDialog" timestamp="1607148094170">
+      <screen x="0" y="23" width="3440" height="1347" />
+    </state>
+    <state x="2019" y="271" key="RiderGenerateDialog/-1792.61.1792.1097/0.23.3440.1347@0.23.3440.1347" timestamp="1607148094170" />
     <state x="2120" y="283" key="RollbackChangesDialog" timestamp="1607138652302">
       <screen x="0" y="23" width="3440" height="1347" />
     </state>

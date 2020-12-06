@@ -1,52 +1,67 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PeopleDB.Shared.Models;
+using PeopleDB.Shared.Repository;
 
 namespace PeopleDB.Server.Controllers {
     [Route("api/[controller]")]
     [ApiController]
     public class PersonController : ControllerBase {
-        private readonly AppDbContext _context;
 
-        public PersonController(AppDbContext context) {
-            _context = context;
+        private readonly IPersonRepository personRepository;
+
+        public PersonController(IPersonRepository _personRepository) {
+            personRepository = _personRepository;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Person>>> GetAllPersons() {
-            List<Person> allPersons = await _context.Persons.ToListAsync();
+        [HttpGet("GetAll")]
+        public IActionResult GetAllPersons() {
+            List<Person> allPersons = personRepository.GetAllPersons();
+            if (allPersons.Count == 0) {
+                return BadRequest("The DB is empty, please create a new person entry");
+            }
+
             return Ok(allPersons);
         }
 
-        [HttpGet("{id}", Name = "GetPersonById")]
-        public async Task<ActionResult<Person>> GetPersonById(uint id) {
-            Person person = await _context.Persons.FirstOrDefaultAsync(a => a.Id == id);
+        [HttpGet("Get/{id}")]
+        public async Task<IActionResult> GetPersonById(uint? id) {
+            Person person = await personRepository.GetPersonById(id);
+            if (person == null) {
+                return NotFound($"Person entry with the Id {id} does not exist");
+            }
+
             return Ok(person);
         }
 
-        [HttpPost]
-        public async Task<ActionResult> CreatePerson(Person person) {
-            _context.Add(person);
-            await _context.SaveChangesAsync();
-            return Ok(person.Id);
+        [HttpPost("Create")]
+        public async Task<IActionResult> CreatePerson([FromBody] Person person) {
+            Person createdPerson = await personRepository.CreatePerson(person);
+            if (createdPerson != null) {
+                return new CreatedAtActionResult("GetPerson", "Person", new { createdPerson.Id }, createdPerson);
+            } else {
+                return BadRequest("An error has occurred, please try again");
+            }
         }
         
-        [HttpPut]
-        public async Task<ActionResult> UpdatePerson(Person person) {
-            _context.Entry(person).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return NoContent();
+        [HttpPost("Update")]
+        public IActionResult UpdatePerson([FromBody] Person person) {
+            if (person == null) throw new ArgumentNullException(nameof(person));
+            personRepository.UpdatePerson(person);
+            return Ok("The account was updated successfully");
         }
-        
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> DeletePersonById(uint id)
-        {
-            var person = new Person { Id = id };
-            _context.Remove(person);
-            await _context.SaveChangesAsync();
-            return NoContent();
+
+        [HttpDelete("Delete/{id}")]
+        public async Task<IActionResult> DeletePerson(uint? id) {
+            string result = await personRepository.DeletePerson(id);
+            if (result == null) {
+                return BadRequest("Unable to delete, this account doesn't exist");
+            }
+            
+            return Ok("The account was deleted successfully");
         }
     }
 }

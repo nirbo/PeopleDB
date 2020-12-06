@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vcqH9QUMq1dPTQD0Xxu1ZZj6VNjnRkvLxSPoxayWOn8KsXMXPidrxgWPFKr8Db+J3xwNzq5BwMrwNGwQeE3IIA==",
+  "dgSpecHash": "yTYbS3kNOsFpExqv3ijlMD1yE6pq2FTt90aupZJv6PdlLUkP148jNsdsik823lVg9knyaRLXXhLU3b1CXh2EIA==",
   "success": true,
   "projectFilePath": "/Users/nbenor/dev/PeopleDB/Client/PeopleDB.Client.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,10 @@
     "/Users/nbenor/.nuget/packages/microsoft.jsinterop/3.1.8/microsoft.jsinterop.3.1.8.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.jsinterop.webassembly/3.2.1/microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/mudblazor/1.1.5/mudblazor.1.1.5.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/mysqlconnector/0.69.9/mysqlconnector.0.69.9.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/pomelo.entityframeworkcore.mysql/3.2.4/pomelo.entityframeworkcore.mysql.3.2.4.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",

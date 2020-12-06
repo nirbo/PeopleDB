@@ -84,13 +84,20 @@ using PeopleDB.Shared.Models;
 #nullable disable
 #nullable restore
 #line 11 "/Users/nbenor/dev/PeopleDB/Client/_Imports.razor"
-using MudBlazor;
+using PeopleDB.Shared.Context;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 12 "/Users/nbenor/dev/PeopleDB/Client/_Imports.razor"
+using MudBlazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "/Users/nbenor/dev/PeopleDB/Client/_Imports.razor"
 using MudBlazor.Dialog;
 
 #line default
