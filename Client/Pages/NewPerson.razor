@@ -1,52 +1,88 @@
 @page "/person/new"
+@using System.ComponentModel.DataAnnotations
+@using System.Diagnostics.CodeAnalysis
+@using Newtonsoft.Json.Serialization
+@using PeopleDB.Shared.Repository
 @inject HttpClient http
 
-<MudPaper Class="d-flex flex-column ma-4 pa-8" Elevation="12" Style="height: 100%;">
+<MudPaper Class="ma-4 pa-8" Elevation="12" Style="height: 100%;">
     <MudText Typo="Typo.h5" Align="Align.Center" Class="my-4">Personal Details</MudText>
-    <MudCard Elevation="0" Style="width: 50%;" Class="align-self-center">
-        <EditForm Model="@person" OnValidSubmit="personValidSubmit">
-            <DataAnnotationsValidator/>
-            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="First Name" @bind-Value="person.firstName" For="@(() => person.firstName)" Immediate="true" Required="true"/>
-            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Last Name" @bind-Value="person.lastName" For="@(() => person.lastName)" Immediate="true" Required="true"/>
-            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="SIN" @bind-Value="person.sin" For="@(() => person.sin)" ErrorText="Only Digits Allowed" Immediate="true" Required="true"/>
-        </EditForm>
-        
-        <MudText Typo="Typo.h5" Align="Align.Center" Class="mb-4 mt-16">Address</MudText>
-        <EditForm Model="@address" OnValidSubmit="addressValidSubmit">
-            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 1" @bind-Value="address.Address1" For="@(() => address.Address1)" Immediate="true" Required="true"/>
-            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 2" @bind-Value="address.Address2" For="@(() => address.Address2)"/>
-            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="City" @bind-Value="address.City" For="@(() => address.City)" Immediate="true" Required="true"/>
-            <MudSelect Class="my-1" T="string" Label="Province" Variant="Variant.Outlined" Immediate="true" Required="true" OffsetY="true" Dense="true">
-                @if (canadaProvinces != null) {
-                    foreach (string province in canadaProvinces) {
-                        <MudSelectItem Value="@(province)"/>
-                    }
-                }
-            </MudSelect>
-            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Country" @bind-Value="address.Country" For="@(() => address.Country)" Immediate="true" Required="true"/>
-            <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Postal Code" @bind-Value="address.PostalCode" For="@(() => address.PostalCode)" Immediate="true" Required="true"/>
-        </EditForm>
-    </MudCard>
-    <MudCardActions Class="px-0 my-4 align-self-center justify-end" Style="width: 50%;">
-        <MudButton Variant="Variant.Filled" Size="Size.Large" Color="Color.Success" Disabled="@(!success)">Save Person</MudButton>
-    </MudCardActions>
+    <EditForm Model="@person" OnValidSubmit="@PersonValidSubmit">
+        <DataAnnotationsValidator/>
+        <MudCard Elevation="0" Style="width: 50%;" Class="mx-auto">
+            <MudCardContent>
+                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="First Name" @bind-Value="person.firstName" For="@(() => person.firstName)" Immediate="true" Required="true"/>
+                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Last Name" @bind-Value="person.lastName" For="@(() => person.lastName)" Immediate="true" Required="true"/>
+                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="SIN" @bind-Value="person.sin" For="@(() => person.sin)" Immediate="true" Required="true"/>
+            </MudCardContent>
+            <MudCardActions Class="px-0 my-4">
+                <MudButton ButtonType="ButtonType.Submit" Class="mx-auto" Variant="Variant.Filled" Size="Size.Large" Color="Color.Success">Save Person</MudButton>
+            </MudCardActions>
+        </MudCard>
+    </EditForm>
 </MudPaper>
+
+        @*         <MudText Typo="Typo.h5" Align="Align.Center" Class="mb-4 mt-16">Address</MudText> *@
+@*         <EditForm Model="@address" OnValidSubmit="addressValidSubmit"> *@
+@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 1" @bind-Value="address.Address1" For="@(() => address.Address1)" Immediate="true" Required="true"/> *@
+@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 2" @bind-Value="address.Address2" For="@(() => address.Address2)"/> *@
+@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="City" @bind-Value="address.City" For="@(() => address.City)" Immediate="true" Required="true"/> *@
+@*             <MudSelect Class="my-1" T="string" Label="Province" Variant="Variant.Outlined" Immediate="true" Required="true" OffsetY="true" Dense="true"> *@
+@*                 @if (canadaProvinces != null) { *@
+@*                     foreach (string province in canadaProvinces) { *@
+@*                         <MudSelectItem Value="@(province)"/> *@
+@*                     } *@
+@*                 } *@
+@*             </MudSelect> *@
+@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Country" @bind-Value="address.Country" For="@(() => address.Country)" Immediate="true" Required="true"/> *@
+@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Postal Code" @bind-Value="address.PostalCode" For="@(() => address.PostalCode)" Immediate="true" Required="true"/> *@
+@*         </EditForm> *@
 
 @code {
     Person person = new Person();
     Address address = new Address();
-    bool success;
-    
-    private void personValidSubmit(EditContext context) {
-        context.Validate();
+    bool personSuccess;
+    bool addressSuccess;
+
+    public class NewPersonValidate {
+        // [Required, StringLength(70, ErrorMessage = "Only 70 characters allowed")]
+        public string firstName { get; set; }
         
-        success = true;
+        // [Required, StringLength(70, ErrorMessage = "Only 70 characters allowed")]
+        public string lastName { get; set; }
+        
+        // [Required, StringLength(9, ErrorMessage = "SIN can only be 9 digits", MinimumLength = 9),
+         // RegularExpression(@"^\d{9}$")]
+        public string sin { get; set; }
+    }
+
+    // public class NewAddressValidate {
+    //     [Required]
+    //     public string address1 { get; set; }
+    //     
+    //     [Required]
+    //     public string address2 { get; set; }
+    //     
+    //     [Required]
+    //     public string city { get; set; }
+    //     
+    //     [Required]
+    //     public string province { get; set; }
+    //     
+    //     [Required]
+    //     public string country { get; set; }
+    //     
+    //     [Required]
+    //     public string postalCode { get; set; }
+    // }
+
+    private void PersonValidSubmit(EditContext context) {
+        personSuccess = true;
+        StateHasChanged();
     }
 
     private void addressValidSubmit(EditContext context) {
-        context.Validate();
-        
-        success = true;
+        addressSuccess = true;
     }
 }
 

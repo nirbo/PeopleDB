@@ -112,6 +112,10 @@
           <e p="20201206071436_UpdateModelMaxLengths.Designer.cs" t="Include" />
           <e p="20201206072046_UpdateModelMaxLengthsFix.cs" t="Include" />
           <e p="20201206072046_UpdateModelMaxLengthsFix.Designer.cs" t="Include" />
+          <e p="20201206210714_ChangeSinToString.cs" t="Include" />
+          <e p="20201206210714_ChangeSinToString.Designer.cs" t="Include" />
+          <e p="20201207020716_AddConstraintsToSin.cs" t="Include" />
+          <e p="20201207020716_AddConstraintsToSin.Designer.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">

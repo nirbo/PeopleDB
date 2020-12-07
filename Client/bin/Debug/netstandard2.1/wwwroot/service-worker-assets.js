@@ -49,7 +49,7 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-FHZb7ita96Z1O0G20e\/TzhbH95wNeKQHSbrxpcavZPo=",
+      "hash": "sha256-Ws8jWEh3l6SZSYb223RmuztGidP9TPTmoP+9W3eWvFs=",
       "url": "css\/peopledb.css"
     },
     {
@@ -69,7 +69,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-TG5neCAaqSak90fz6T\/g1\/+sbDJrKMbWMfpbqN3TfcA=",
+      "hash": "sha256-tdRmbcVXqDtVjADjPq7fCY+sU+MZ1rvhu9rgkRyw2SM=",
       "url": "_framework\/_bin\/PeopleDB.Client.dll"
     },
     {
@@ -221,7 +221,7 @@
       "url": "_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
-      "hash": "sha256-AfBRJIGdsTJMqg\/ROSXLkqHpGYdXigNil5QuW16cwEA=",
+      "hash": "sha256-bvO8UowJlUzzyRrKXfaHr2zG945\/EfVfs50Beo6Yu3k=",
       "url": "_framework\/_bin\/PeopleDB.Shared.dll"
     },
     {
@@ -377,11 +377,11 @@
       "url": "_framework\/_bin\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-AuGClNgs6HyHwIdxuE5KV3Lt4l2o1o5O0LHa547Mhqc=",
+      "hash": "sha256-LK5jOpeT2KDW2CU6pVwGLzHSZO6gNAumUSP\/fIUmD0c=",
       "url": "_framework\/_bin\/PeopleDB.Client.pdb"
     },
     {
-      "hash": "sha256-54qz1ZaCleW+G3c99cec34QIvGdzMqJaJy4nnP8Yshg=",
+      "hash": "sha256-XKaQHNvZCPFmRYD4\/Ns54foKHookPssGAWrWQi0febk=",
       "url": "_framework\/_bin\/PeopleDB.Shared.pdb"
     },
     {
@@ -401,9 +401,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-flQTa4TEwpAfDFNa1W\/wqomhfey9l0JqUTM7sKDA87E=",
+      "hash": "sha256-CQKTwzU\/sSsMf2uVOcjrSX3zDTu55EWoMT4FeBpRQAw=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "aDQgbcRw"
+  "version": "48S0Bom4"
 };
