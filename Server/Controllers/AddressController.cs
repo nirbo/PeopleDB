@@ -46,7 +46,7 @@ namespace PeopleDB.Server.Controllers {
             }
         }
         
-        [HttpPost("Update")]
+        [HttpPut("Update")]
         public IActionResult UpdateAddress([FromBody] Address address) {
             if (address == null) throw new ArgumentNullException(nameof(address));
             addressRepository.UpdateAddress(address);

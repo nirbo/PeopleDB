@@ -46,7 +46,7 @@ namespace PeopleDB.Server.Controllers {
             }
         }
         
-        [HttpPost("Update")]
+        [HttpPut("Update")]
         public IActionResult UpdatePerson([FromBody] Person person) {
             if (person == null) throw new ArgumentNullException(nameof(person));
             personRepository.UpdatePerson(person);

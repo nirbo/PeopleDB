@@ -1,19 +1,28 @@
 @page "/person/update/{id:int}"
-@inject HttpClient http
+@using System.Net
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject ISnackbar Snackbar
 
-<PersonForm Person="@person" ButtonText="Edit Person" FormTitle="Edit Person" OnValidSubmit="@UpdatePerson"/>
+<PersonForm Person="@person" ButtonText="Save Changes" FormTitle="Edit Person" OnValidSubmit="@UpdatePerson"/>
 
 @code {
     [Parameter]
     public int id { get; set; }
 
-    Person person = new Person();
+    private Person person = new Person();
     
     protected override async Task OnParametersSetAsync() {
-        person = await http.GetFromJsonAsync<Person>("api/Person/Get/{id}");
+        person = await Http.GetFromJsonAsync<Person>("Person/Get/" + id);
     }
 
     async Task UpdatePerson() {
-        await http.PutAsJsonAsync("api/Person/Update", person);
+        HttpResponseMessage statusCode = await Http.PutAsJsonAsync("Person/Update", person);
+        if (statusCode.StatusCode == HttpStatusCode.OK) {
+            Snackbar.Add("Changes saved successfully", Severity.Success);
+            NavigationManager.NavigateTo("/person");
+        } else {
+            Snackbar.Add("Failed to save changes", Severity.Error);
+        }
     }
 }

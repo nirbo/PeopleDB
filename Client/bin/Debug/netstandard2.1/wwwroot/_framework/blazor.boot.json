@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "PeopleDB.Client.dll": "sha256-28JszoC89A9vZ4OwBz5SoUkdxMEQYN0dVN2ITvZhqJE=",
+      "PeopleDB.Client.dll": "sha256-g+MTof7eF2TpDJgEp2SQpy8H8PekXDgKYgiTdzP40TI=",
       "System.Text.Json.dll": "sha256-M1pYQBRnwZmTq5CodeZxTzsPoWvxBmTSTyy3y0pe8P0=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-kL\/omZDwqByAi+lPdMeDmr3XjHcn4RVb+LmZ4mut1Yc=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -85,7 +85,7 @@
       "MudBlazor.dll": "sha256-sxN7QMo9vZ7lY7sjW9xnNcWCMd8Z+6dHv\/Tf\/hjPRiM="
     },
     "pdb": {
-      "PeopleDB.Client.pdb": "sha256-mFBnP\/GxvgpkUnvYaZEuIOgqhEMr0AqcZy43HSOpXwA=",
+      "PeopleDB.Client.pdb": "sha256-HPittnAQsm2T2auAmAblkuI3KFWuo2WjFvmgReTFmHs=",
       "PeopleDB.Shared.pdb": "sha256-q6zQVMw88b0GQwIpzliwLTrcaQFFrI05JmwzbAfeyB0="
     },
     "runtime": {

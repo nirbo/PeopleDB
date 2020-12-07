@@ -1,20 +1,28 @@
 @using System.Xml.Schema
-<MudPaper Class="ma-4 pa-8" Elevation="12" Style="height: 100%;">
-    <MudText Typo="Typo.h5" Align="Align.Center" Class="my-4">@FormTitle</MudText>
-    <EditForm Model="@Person" OnValidSubmit="@OnValidSubmit">
-        <DataAnnotationsValidator/>
-        <MudCard Elevation="0" Style="width: 50%;" Class="mx-auto">
-            <MudCardContent>
-                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="First Name" @bind-Value="Person.firstName" For="@(() => Person.firstName)" Immediate="true" Required="true"/>
-                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Last Name" @bind-Value="Person.lastName" For="@(() => Person.lastName)" Immediate="true" Required="true"/>
-                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="SIN" @bind-Value="Person.sin" For="@(() => Person.sin)" Immediate="true" Required="true"/>
-            </MudCardContent>
-            <MudCardActions Class="px-0 my-4">
-                <MudButton ButtonType="ButtonType.Submit" Class="mx-auto" Variant="Variant.Filled" Size="Size.Large" Color="Color.Success">@ButtonText</MudButton>
-            </MudCardActions>
-        </MudCard>
-    </EditForm>
-</MudPaper>
+
+@if (Person.firstName == null && FormTitle.Contains("Edit")) {
+    <MudPaper Class="d-flex flex-column align-center justify-center py-2 px-1 table-loading-mudpaper" Elevation="12">
+        <MudText Typo="Typo.h5" Align="Align.Center">Loading Form Data...</MudText>
+        <MudProgressCircular Color="Color.Primary" Indeterminate="true" Class="mt-6 pa-2 mx-2 align-self-center"/>
+    </MudPaper>
+} else {
+    <MudPaper Class="ma-4 pa-8" Elevation="12" Style="height: 100%;">
+        <MudText Typo="Typo.h5" Align="Align.Center" Class="my-4">@FormTitle</MudText>
+        <EditForm Model="@Person" OnValidSubmit="@OnValidSubmit">
+            <DataAnnotationsValidator/>
+            <MudCard Elevation="0" Style="width: 50%;" Class="mx-auto">
+                <MudCardContent>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="First Name" @bind-Value="Person.firstName" For="@(() => Person.firstName)" Immediate="true" Required="true"/>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Last Name" @bind-Value="Person.lastName" For="@(() => Person.lastName)" Immediate="true" Required="true"/>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="SIN" @bind-Value="Person.sin" For="@(() => Person.sin)" Immediate="true" Required="true"/>
+                </MudCardContent>
+                <MudCardActions Class="px-0 my-4">
+                    <MudButton ButtonType="ButtonType.Submit" Class="mx-auto" Variant="Variant.Filled" Size="Size.Large" Color="Color.Success">@ButtonText</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </MudPaper>
+}
 
 @code {
     [Parameter]
@@ -28,10 +36,4 @@
     
     [Parameter]
     public EventCallback<EditContext> OnValidSubmit { get; set; }
-    
-    // bool personSuccess;
-    // private void PersonValidSubmit(EditContext context) {
-    //     personSuccess = true;
-    //     StateHasChanged();
-    // }
 }

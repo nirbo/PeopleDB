@@ -69,7 +69,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-28JszoC89A9vZ4OwBz5SoUkdxMEQYN0dVN2ITvZhqJE=",
+      "hash": "sha256-g+MTof7eF2TpDJgEp2SQpy8H8PekXDgKYgiTdzP40TI=",
       "url": "_framework\/_bin\/PeopleDB.Client.dll"
     },
     {
@@ -377,7 +377,7 @@
       "url": "_framework\/_bin\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-mFBnP\/GxvgpkUnvYaZEuIOgqhEMr0AqcZy43HSOpXwA=",
+      "hash": "sha256-HPittnAQsm2T2auAmAblkuI3KFWuo2WjFvmgReTFmHs=",
       "url": "_framework\/_bin\/PeopleDB.Client.pdb"
     },
     {
@@ -401,9 +401,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-Fk08kLXNhhkBimVcbRfK6qzGf3G5fcs3SsHcRPaiZ1k=",
+      "hash": "sha256-xoHePd+p6ReZ\/OpMYVAFnA9mlMZn86I2Fbx9\/QqDS9U=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "1PxBOo04"
+  "version": "z1D3DK0J"
 };

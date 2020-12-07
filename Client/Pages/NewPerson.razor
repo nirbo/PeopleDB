@@ -1,11 +1,10 @@
 @page "/person/new"
-@using System.ComponentModel.DataAnnotations
-@using System.Diagnostics.CodeAnalysis
-@using Newtonsoft.Json.Serialization
-@using PeopleDB.Shared.Repository
-@inject HttpClient http
+@using System.Net
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject ISnackbar Snackbar
 
-<PersonForm Person="@person" ButtonText="Create Person" FormTitle="Add Person" OnValidSubmit="@OnValidSubmit"/>
+<PersonForm Person="@person" ButtonText="Create Person" FormTitle="Add Person" OnValidSubmit="@CreatePerson"/>
 
         @*         <MudText Typo="Typo.h5" Align="Align.Center" Class="mb-4 mt-16">Address</MudText> *@
 @*         <EditForm Model="@address" OnValidSubmit="addressValidSubmit"> *@
@@ -26,9 +25,14 @@
 @code {
     Person person = new Person();
     
-    private void OnValidSubmit(EditContext context) {
-        bool personSuccess = true;
-        StateHasChanged();
+    async Task CreatePerson() {
+        HttpResponseMessage statusCode = await Http.PostAsJsonAsync("Person/Create", person);
+        if (statusCode.StatusCode == HttpStatusCode.OK) {
+            Snackbar.Add("Person entry created successfully", Severity.Success);
+            NavigationManager.NavigateTo("/person");
+        } else {
+            Snackbar.Add("Failed to create new entry", Severity.Error);
+        }
     }
 
     // Address address = new Address();

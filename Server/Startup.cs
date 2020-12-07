@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MudBlazor;
 using PeopleDB.Shared.Context;
 using PeopleDB.Shared.Repository;
 
@@ -24,13 +25,26 @@ namespace PeopleDB.Server
                     .AllowAnyHeader()
                     .AllowAnyMethod());
             });
-            
+
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddDbContext<AppDbContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("MySqlConnection")));
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient<IAddressRepository, AddressRepository>();
+            
+            services.AddMudBlazorSnackbar(config =>
+            {
+                config.PositionClass = Defaults.Classes.Position.BottomRight;
+
+                config.PreventDuplicates = true;
+                config.NewestOnTop = false;
+                config.ShowCloseIcon = true;
+                config.VisibleStateDuration = 10000;
+                config.HideTransitionDuration = 500;
+                config.ShowTransitionDuration = 500;
+                config.SnackbarVariant = Variant.Filled;
+            });
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {

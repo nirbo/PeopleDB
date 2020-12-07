@@ -1,5 +1,5 @@
 @page "/person"
-@inject HttpClient http
+@inject HttpClient Http
 @inject IDialogService Dialog
 
 @if (AllPersons.Count == 0) {
@@ -13,7 +13,7 @@ else {
         <ToolBarContent>
             <MudButton Color="Color.Success" Size="Size.Large" StartIcon="@Filled.Add" Link="/person/new">Add Person</MudButton>
             <MudToolBarSpacer/>
-            <MudTextField @bind-Value="search_string" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+            <MudTextField @bind-Value="search_string" Placeholder="Search" Immediate="true" Adornment="Adornment.Start" AdornmentIcon="@Filled.Search" IconSize="Size.Medium" HelperText="Case sensitive" Class="mt-0"></MudTextField>
         </ToolBarContent>
         <HeaderContent>
             <MudTh>First Name</MudTh>
@@ -28,9 +28,9 @@ else {
             <MudTd DataLabel="First Name">@context.firstName</MudTd>
             <MudTd DataLabel="Last Name">@context.lastName</MudTd>
             <MudTd DataLabel="SIN">@context.sin</MudTd>
-            <MudTd DataLabel="Address"></MudTd>
-            <MudTd DataLabel="Pets"></MudTd>
-            <MudTd DataLabel="Vehicles"></MudTd>
+            <MudTd DataLabel="Address">@context.address</MudTd>
+            <MudTd DataLabel="Pets">@context.pets</MudTd>
+            <MudTd DataLabel="Vehicles">@context.vehicles</MudTd>
             <MudTd DataLabel="Actions">
                 <MudButton Color="Color.Tertiary" Link=@($"person/update/" + context.Id)>Edit</MudButton>
             </MudTd>
@@ -45,7 +45,7 @@ else {
     private List<Person> AllPersons = new List<Person>();
 
     protected override async Task OnInitializedAsync() {
-        AllPersons = await http.GetFromJsonAsync<List<Person>>("Person/GetAll");
+        AllPersons = await Http.GetFromJsonAsync<List<Person>>("Person/GetAll");
     }
 
 }
