@@ -30,6 +30,7 @@ namespace PeopleDB.Server
             services.AddDbContext<AppDbContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("MySqlConnection")));
             services.AddTransient<IPersonRepository, PersonRepository>();
+            services.AddTransient<IAddressRepository, AddressRepository>();
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {

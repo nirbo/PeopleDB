@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yTYbS3kNOsFpExqv3ijlMD1yE6pq2FTt90aupZJv6PdlLUkP148jNsdsik823lVg9knyaRLXXhLU3b1CXh2EIA==",
+  "dgSpecHash": "vjIpJvrgI28Z9NTXPN5gNngvbxctWVls32oHYOukXqUPlT5qBZ/5KAvPSsRDdDONpWvoz8yWvwvjldVaatR8Gw==",
   "success": true,
   "projectFilePath": "/Users/nbenor/dev/PeopleDB/Client/PeopleDB.Client.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,7 @@
     "/Users/nbenor/.nuget/packages/microsoft.aspnetcore.components.webassembly.httphandler/3.2.0/microsoft.aspnetcore.components.webassembly.httphandler.3.2.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.aspnetcore.components.webassembly.runtime/3.2.0/microsoft.aspnetcore.components.webassembly.runtime.3.2.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.aspnetcore.metadata/3.1.8/microsoft.aspnetcore.metadata.3.1.8.nupkg.sha512",
-    "/Users/nbenor/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/microsoft.bcl.asyncinterfaces/5.0.0/microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.entityframeworkcore/3.1.10/microsoft.entityframeworkcore.3.1.10.nupkg.sha512",
@@ -55,9 +55,9 @@
     "/Users/nbenor/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/system.net.http.json/3.2.0/system.net.http.json.3.2.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
-    "/Users/nbenor/.nuget/packages/system.runtime.compilerservices.unsafe/4.7.1/system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
-    "/Users/nbenor/.nuget/packages/system.text.encodings.web/4.7.1/system.text.encodings.web.4.7.1.nupkg.sha512",
-    "/Users/nbenor/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/system.text.encodings.web/5.0.0/system.text.encodings.web.5.0.0.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/system.text.json/5.0.0/system.text.json.5.0.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []

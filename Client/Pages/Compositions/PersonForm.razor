@@ -1,0 +1,37 @@
+@using System.Xml.Schema
+<MudPaper Class="ma-4 pa-8" Elevation="12" Style="height: 100%;">
+    <MudText Typo="Typo.h5" Align="Align.Center" Class="my-4">@FormTitle</MudText>
+    <EditForm Model="@Person" OnValidSubmit="@OnValidSubmit">
+        <DataAnnotationsValidator/>
+        <MudCard Elevation="0" Style="width: 50%;" Class="mx-auto">
+            <MudCardContent>
+                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="First Name" @bind-Value="Person.firstName" For="@(() => Person.firstName)" Immediate="true" Required="true"/>
+                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Last Name" @bind-Value="Person.lastName" For="@(() => Person.lastName)" Immediate="true" Required="true"/>
+                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="SIN" @bind-Value="Person.sin" For="@(() => Person.sin)" Immediate="true" Required="true"/>
+            </MudCardContent>
+            <MudCardActions Class="px-0 my-4">
+                <MudButton ButtonType="ButtonType.Submit" Class="mx-auto" Variant="Variant.Filled" Size="Size.Large" Color="Color.Success">@ButtonText</MudButton>
+            </MudCardActions>
+        </MudCard>
+    </EditForm>
+</MudPaper>
+
+@code {
+    [Parameter]
+    public Person Person { get; set; }
+
+    [Parameter]
+    public string ButtonText { get; set; } = "Save Person";
+
+    [Parameter]
+    public string FormTitle { get; set; }
+    
+    [Parameter]
+    public EventCallback<EditContext> OnValidSubmit { get; set; }
+    
+    // bool personSuccess;
+    // private void PersonValidSubmit(EditContext context) {
+    //     personSuccess = true;
+    //     StateHasChanged();
+    // }
+}

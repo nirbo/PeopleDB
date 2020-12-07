@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8clNJzplTkJxAJzvkpBHM6OV69+/mxrOo7w3qA7HOL8VwNQWpBfqDevbXrK4jN3oaol3bELwmOLgMeVGtRUmtA==",
+  "dgSpecHash": "ZQw+/9aqeuSqL7xftlPTOwCUWa+dvnthefn2YbOvZDKrUbQyONa9xwfpksjkkxMCIYY+R31dN9ds8ZFNg0GYLw==",
   "success": true,
   "projectFilePath": "/Users/nbenor/dev/PeopleDB/Server/PeopleDB.Server.csproj",
   "expectedPackageFiles": [
@@ -50,7 +50,7 @@
     "/Users/nbenor/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/system.net.http.json/3.2.0/system.net.http.json.3.2.0.nupkg.sha512",
-    "/Users/nbenor/.nuget/packages/system.text.json/4.7.1/system.text.json.4.7.1.nupkg.sha512"
+    "/Users/nbenor/.nuget/packages/system.text.json/5.0.0/system.text.json.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,19 @@
+@page "/person/update/{id:int}"
+@inject HttpClient http
+
+<PersonForm Person="@person" ButtonText="Edit Person" FormTitle="Edit Person" OnValidSubmit="@UpdatePerson"/>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    Person person = new Person();
+    
+    protected override async Task OnParametersSetAsync() {
+        person = await http.GetFromJsonAsync<Person>("api/Person/Get/{id}");
+    }
+
+    async Task UpdatePerson() {
+        await http.PutAsJsonAsync("api/Person/Update", person);
+    }
+}

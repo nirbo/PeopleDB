@@ -14,6 +14,10 @@
           </e>
         </e>
         <e p="Pages" t="Include">
+          <e p="Compositions" t="Include">
+            <e p="PersonForm.razor" t="Include" />
+          </e>
+          <e p="EditPerson.razor" t="Include" />
           <e p="Index.razor" t="Include" />
           <e p="NewPerson.razor" t="Include" />
           <e p="PersonsTable.razor" t="Include" />
@@ -63,6 +67,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="AddressController.cs" t="Include" />
           <e p="PersonController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
@@ -133,6 +138,8 @@
         </e>
         <e p="PeopleDB.Shared.csproj" t="IncludeRecursive" />
         <e p="Repository" t="Include">
+          <e p="AddressRepository.cs" t="Include" />
+          <e p="IAddressRepository.cs" t="Include" />
           <e p="IPersonRepository.cs" t="Include" />
           <e p="PersonRepository.cs" t="Include" />
         </e>

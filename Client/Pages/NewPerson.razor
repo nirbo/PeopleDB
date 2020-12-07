@@ -5,22 +5,7 @@
 @using PeopleDB.Shared.Repository
 @inject HttpClient http
 
-<MudPaper Class="ma-4 pa-8" Elevation="12" Style="height: 100%;">
-    <MudText Typo="Typo.h5" Align="Align.Center" Class="my-4">Personal Details</MudText>
-    <EditForm Model="@person" OnValidSubmit="@PersonValidSubmit">
-        <DataAnnotationsValidator/>
-        <MudCard Elevation="0" Style="width: 50%;" Class="mx-auto">
-            <MudCardContent>
-                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="First Name" @bind-Value="person.firstName" For="@(() => person.firstName)" Immediate="true" Required="true"/>
-                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Last Name" @bind-Value="person.lastName" For="@(() => person.lastName)" Immediate="true" Required="true"/>
-                <MudTextField Class="my-1" Variant="Variant.Outlined" Label="SIN" @bind-Value="person.sin" For="@(() => person.sin)" Immediate="true" Required="true"/>
-            </MudCardContent>
-            <MudCardActions Class="px-0 my-4">
-                <MudButton ButtonType="ButtonType.Submit" Class="mx-auto" Variant="Variant.Filled" Size="Size.Large" Color="Color.Success">Save Person</MudButton>
-            </MudCardActions>
-        </MudCard>
-    </EditForm>
-</MudPaper>
+<PersonForm Person="@person" ButtonText="Create Person" FormTitle="Add Person" OnValidSubmit="@OnValidSubmit"/>
 
         @*         <MudText Typo="Typo.h5" Align="Align.Center" Class="mb-4 mt-16">Address</MudText> *@
 @*         <EditForm Model="@address" OnValidSubmit="addressValidSubmit"> *@
@@ -40,22 +25,15 @@
 
 @code {
     Person person = new Person();
-    Address address = new Address();
-    bool personSuccess;
-    bool addressSuccess;
-
-    public class NewPersonValidate {
-        // [Required, StringLength(70, ErrorMessage = "Only 70 characters allowed")]
-        public string firstName { get; set; }
-        
-        // [Required, StringLength(70, ErrorMessage = "Only 70 characters allowed")]
-        public string lastName { get; set; }
-        
-        // [Required, StringLength(9, ErrorMessage = "SIN can only be 9 digits", MinimumLength = 9),
-         // RegularExpression(@"^\d{9}$")]
-        public string sin { get; set; }
+    
+    private void OnValidSubmit(EditContext context) {
+        bool personSuccess = true;
+        StateHasChanged();
     }
 
+    // Address address = new Address();
+    // bool addressSuccess;
+    
     // public class NewAddressValidate {
     //     [Required]
     //     public string address1 { get; set; }
@@ -75,31 +53,22 @@
     //     [Required]
     //     public string postalCode { get; set; }
     // }
-
-    private void PersonValidSubmit(EditContext context) {
-        personSuccess = true;
-        StateHasChanged();
-    }
-
-    private void addressValidSubmit(EditContext context) {
-        addressSuccess = true;
-    }
 }
 
-@code {
-    List<string> canadaProvinces = new List<string> {
-        "Alberta",
-        "British Columbia",
-        "Manitoba",
-        "New Brunswick",
-        "Newfoundlands and Labrador",
-        "Northwest Territories",
-        "Nova Scotia",
-        "Nunavut",
-        "Ontario",
-        "Prince Edward Island",
-        "Quebec",
-        "Saskatchewan",
-        "Yukon"
-    };
+@* @code { *@
+@*     List<string> canadaProvinces = new List<string> { *@
+@*         "Alberta", *@
+@*         "British Columbia", *@
+@*         "Manitoba", *@
+@*         "New Brunswick", *@
+@*         "Newfoundlands and Labrador", *@
+@*         "Northwest Territories", *@
+@*         "Nova Scotia", *@
+@*         "Nunavut", *@
+@*         "Ontario", *@
+@*         "Prince Edward Island", *@
+@*         "Quebec", *@
+@*         "Saskatchewan", *@
+@*         "Yukon" *@
+@*     }; *@
 }

@@ -50,17 +50,17 @@ namespace PeopleDB.Server.Controllers {
         public IActionResult UpdatePerson([FromBody] Person person) {
             if (person == null) throw new ArgumentNullException(nameof(person));
             personRepository.UpdatePerson(person);
-            return Ok("The account was updated successfully");
+            return Ok("The person was updated successfully");
         }
 
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> DeletePerson(uint? id) {
             string result = await personRepository.DeletePerson(id);
             if (result == null) {
-                return BadRequest("Unable to delete, this account doesn't exist");
+                return BadRequest("Unable to delete, this person doesn't exist");
             }
             
-            return Ok("The account was deleted successfully");
+            return Ok("The person was deleted successfully");
         }
     }
 }

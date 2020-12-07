@@ -44,7 +44,6 @@ namespace PeopleDB.Shared.Repository {
             }
 
             _dbContext.Entry(person).State = EntityState.Modified;
-
             _dbContext.Persons.Update(person);
             _dbContext.SaveChanges();
         }
@@ -57,7 +56,7 @@ namespace PeopleDB.Shared.Repository {
 
             _dbContext.Persons.Remove(person);
             await _dbContext.SaveChangesAsync();
-            return "Account deleted successfully";
+            return "Person deleted successfully";
         }
     }
 }

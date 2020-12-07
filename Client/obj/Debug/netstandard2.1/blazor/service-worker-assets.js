@@ -69,31 +69,11 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-tdRmbcVXqDtVjADjPq7fCY+sU+MZ1rvhu9rgkRyw2SM=",
+      "hash": "sha256-28JszoC89A9vZ4OwBz5SoUkdxMEQYN0dVN2ITvZhqJE=",
       "url": "_framework\/_bin\/PeopleDB.Client.dll"
     },
     {
-      "hash": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
-      "url": "_framework\/_bin\/System.Net.Http.Json.dll"
-    },
-    {
-      "hash": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
-      "url": "_framework\/_bin\/System.Buffers.dll"
-    },
-    {
-      "hash": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
-      "url": "_framework\/_bin\/mscorlib.dll"
-    },
-    {
-      "hash": "sha256-TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=",
-      "url": "_framework\/_bin\/System.Threading.Tasks.Extensions.dll"
-    },
-    {
-      "hash": "sha256-\/cPXlNTX8GKF\/lIn\/2DIjtxTe0Wpy4ZDcyAj67b6JYk=",
-      "url": "_framework\/_bin\/System.Memory.dll"
-    },
-    {
-      "hash": "sha256-HQeN+ZfHAERO+uW0fP0J9J3WV1hQ3vUIOWbqGSYBPp8=",
+      "hash": "sha256-M1pYQBRnwZmTq5CodeZxTzsPoWvxBmTSTyy3y0pe8P0=",
       "url": "_framework\/_bin\/System.Text.Json.dll"
     },
     {
@@ -101,7 +81,15 @@
       "url": "_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-EcDo\/GQZkQrOT1Xd0jMPE3NwT5lsMq5DNsPxHVidLDQ=",
+      "hash": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
+      "url": "_framework\/_bin\/mscorlib.dll"
+    },
+    {
+      "hash": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
+      "url": "_framework\/_bin\/System.Buffers.dll"
+    },
+    {
+      "hash": "sha256-APJhF7Cne1YtXAEDjYtS+NC54Yt8Uy4W364YV6GfInE=",
       "url": "_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll"
     },
     {
@@ -123,6 +111,10 @@
     {
       "hash": "sha256-ob5gN\/szfb1CwWnyQWvWvuid3u4df593KvZeoJQEaKc=",
       "url": "_framework\/_bin\/WebAssembly.Net.WebSockets.dll"
+    },
+    {
+      "hash": "sha256-\/cPXlNTX8GKF\/lIn\/2DIjtxTe0Wpy4ZDcyAj67b6JYk=",
+      "url": "_framework\/_bin\/System.Memory.dll"
     },
     {
       "hash": "sha256-6XMT1eT3svGdg6hFzAHJscYdTQjakoYccYTdHmKSr7Y=",
@@ -185,12 +177,20 @@
       "url": "_framework\/_bin\/System.Data.dll"
     },
     {
+      "hash": "sha256-TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=",
+      "url": "_framework\/_bin\/System.Threading.Tasks.Extensions.dll"
+    },
+    {
       "hash": "sha256-qAKfFnquY+7UC\/MzLi04rjqEhLzTryCoLg\/S6MxI19I=",
       "url": "_framework\/_bin\/System.Numerics.Vectors.dll"
     },
     {
-      "hash": "sha256-Tqh1Da+iTRQJEZUGAsMNFuZ4hf1PMf13WApRZod+uw4=",
+      "hash": "sha256-QC2lFdhGg2mRa2tR3yhZ47dJn2L5nn4cRFtCHgTXc2c=",
       "url": "_framework\/_bin\/System.Text.Encodings.Web.dll"
+    },
+    {
+      "hash": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
+      "url": "_framework\/_bin\/System.Net.Http.Json.dll"
     },
     {
       "hash": "sha256-O+AClmxYmKcKCv\/PvQk4tx2T7TlTwypImRCpMNwiwms=",
@@ -221,7 +221,7 @@
       "url": "_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
-      "hash": "sha256-bvO8UowJlUzzyRrKXfaHr2zG945\/EfVfs50Beo6Yu3k=",
+      "hash": "sha256-iJFvALlHuN6uxyaqSiyEKOlu+7LbuS0TF0lGwUbbGAk=",
       "url": "_framework\/_bin\/PeopleDB.Shared.dll"
     },
     {
@@ -377,11 +377,11 @@
       "url": "_framework\/_bin\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-LK5jOpeT2KDW2CU6pVwGLzHSZO6gNAumUSP\/fIUmD0c=",
+      "hash": "sha256-mFBnP\/GxvgpkUnvYaZEuIOgqhEMr0AqcZy43HSOpXwA=",
       "url": "_framework\/_bin\/PeopleDB.Client.pdb"
     },
     {
-      "hash": "sha256-XKaQHNvZCPFmRYD4\/Ns54foKHookPssGAWrWQi0febk=",
+      "hash": "sha256-q6zQVMw88b0GQwIpzliwLTrcaQFFrI05JmwzbAfeyB0=",
       "url": "_framework\/_bin\/PeopleDB.Shared.pdb"
     },
     {
@@ -401,9 +401,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-CQKTwzU\/sSsMf2uVOcjrSX3zDTu55EWoMT4FeBpRQAw=",
+      "hash": "sha256-Fk08kLXNhhkBimVcbRfK6qzGf3G5fcs3SsHcRPaiZ1k=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "48S0Bom4"
+  "version": "1PxBOo04"
 };

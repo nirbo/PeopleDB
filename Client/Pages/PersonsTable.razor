@@ -31,7 +31,9 @@ else {
             <MudTd DataLabel="Address"></MudTd>
             <MudTd DataLabel="Pets"></MudTd>
             <MudTd DataLabel="Vehicles"></MudTd>
-            <MudTd DataLabel="Actions"></MudTd>
+            <MudTd DataLabel="Actions">
+                <MudButton Color="Color.Tertiary" Link=@($"person/update/" + context.Id)>Edit</MudButton>
+            </MudTd>
         </RowTemplate>
         <PagerContent>
             <MudTablePager PageSizeOptions="new[] {10, 25}"/>
