@@ -26,12 +26,14 @@
     Person person = new Person();
     
     async Task CreatePerson() {
-        HttpResponseMessage statusCode = await Http.PostAsJsonAsync("Person/Create", person);
-        if (statusCode.StatusCode == HttpStatusCode.OK) {
+        HttpResponseMessage httpResponse = await Http.PostAsJsonAsync("Person/Create", person);
+        if (httpResponse.Content.ReadAsStringAsync().Result == "DuplicateSIN") {
+            Snackbar.Add("SIN already exists, unable to proceed", Severity.Error);
+        } else if (httpResponse.StatusCode == HttpStatusCode.OK) {
             Snackbar.Add("Person entry created successfully", Severity.Success);
             NavigationManager.NavigateTo("/person");
         } else {
-            Snackbar.Add("Failed to create new entry", Severity.Error);
+            Snackbar.Add("Failed to create new person", Severity.Error);
         }
     }
 

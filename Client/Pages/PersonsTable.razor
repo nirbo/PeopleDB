@@ -10,6 +10,15 @@
 }
 else {
     <MudTable Items="@AllPersons" Hover="true" Elevation="10" FixedHeader="true" Class="ma-4 pa-8" Filter="new Func<Person, bool>(SearchFilter)">
+        <ColGroup>
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col style="width: 10%;"/>
+        </ColGroup>
         <ToolBarContent>
             <MudButton Color="Color.Success" Size="Size.Large" StartIcon="@Filled.Add" Link="/person/new">Add Person</MudButton>
             <MudToolBarSpacer/>
@@ -22,7 +31,7 @@ else {
             <MudTh>Address</MudTh>
             <MudTh>Pets</MudTh>
             <MudTh>Vehicles</MudTh>
-            <MudTh>Actions</MudTh>
+            <MudTh Style="text-align: center;">Actions</MudTh>
         </HeaderContent>
         <RowTemplate>
             <MudTd DataLabel="First Name">@context.firstName</MudTd>
@@ -31,7 +40,7 @@ else {
             <MudTd DataLabel="Address">@context.address</MudTd>
             <MudTd DataLabel="Pets">@context.pets</MudTd>
             <MudTd DataLabel="Vehicles">@context.vehicles</MudTd>
-            <MudTd DataLabel="Actions">
+            <MudTd DataLabel="Actions" Style="text-align: center;">
                 <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Edit" Link="@($"person/update/" + context.Id)"/>
                 <MudIconButton Color="Color.Error" Icon="@Icons.Material.Delete" OnClick="@((e) => DeletePersonDialog(context))"/>
             </MudTd>
@@ -47,7 +56,7 @@ else {
         DialogParameters dialogParams = new DialogParameters();
         dialogParams.Add("person", person);
 
-        IDialogReference dialog = Dialog.Show<DeletePersonDialog>("Delete User", dialogParams);
+        IDialogReference dialog = Dialog.Show<DeletePersonDialog>("Delete User: " + person.firstName + " " + person.lastName, dialogParams);
         DialogResult result = await dialog.Result;
 
         if (!result.Cancelled) {

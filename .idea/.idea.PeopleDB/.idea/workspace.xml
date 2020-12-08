@@ -26,22 +26,27 @@
     <list default="true" id="ca694538-8c16-446a-bea0-a412ecf89400" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PeopleDB/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PeopleDB/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PeopleDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PeopleDB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Pages/Compositions/DeletePersonDialog.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/Compositions/DeletePersonDialog.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Pages/EditPerson.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/EditPerson.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Pages/NewPerson.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/NewPerson.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Pages/PersonsTable.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/PersonsTable.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/PeopleDB.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/PeopleDB.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/PeopleDB.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/PeopleDB.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/PeopleDB.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/PeopleDB.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/PeopleDB.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/PeopleDB.Shared.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Client.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Client.dll.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Client.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Client.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Client.pdb.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Shared.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Shared.dll.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Shared.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/PeopleDB.Shared.pdb.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorComponent.input.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorComponent.input.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.RazorCoreGenerate.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.TagHelpers.output.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/PeopleDB.Client.dll" afterDir="false" />
@@ -49,33 +54,42 @@
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/PeopleDB.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/PeopleDB.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/PeopleDB.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/PeopleDB.Client.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/blazor.boot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/boot.json.input" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/boot.json.input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/service-worker-assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/service-worker-assets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/serviceworkerhashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/serviceworkerhashes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/serviceworkers/wwwroot/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/serviceworkers/wwwroot/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked.output" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked.output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/PeopleDB.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/PeopleDB.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/PeopleDB.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/PeopleDB.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/PeopleDB.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/PeopleDB.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/PeopleDB.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/PeopleDB.Shared.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/PeopleDB.Client.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/PeopleDB.Client.dll.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/PeopleDB.Client.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/PeopleDB.Client.pdb.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/PeopleDB.Shared.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/PeopleDB.Shared.dll.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/PeopleDB.Shared.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/PeopleDB.Shared.pdb.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/blazor.boot.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/blazor.boot.json.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/brotli.manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/brotli.manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/gzip.manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/gzip.manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/service-worker-assets.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/service-worker-assets.js.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/staticwebassets/PeopleDB.Client.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/staticwebassets/PeopleDB.Client.StaticWebAssets.Manifest.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Controllers/PersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Controllers/PersonController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Client.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.TagHelpers.output.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/PeopleDB.Shared.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/PeopleDB.Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/staticwebassets/PeopleDB.Server.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/staticwebassets/PeopleDB.Server.StaticWebAssets.Manifest.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Context/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/PeopleDB.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/PeopleDB.Shared.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +151,6 @@
         <option value="$PROJECT_DIR$/Shared/Repository/IPersonRepository.cs" />
         <option value="$PROJECT_DIR$/Server/Repository/PersonRepository.cs" />
         <option value="$PROJECT_DIR$/Shared/AppDbContext.cs" />
-        <option value="$PROJECT_DIR$/Shared/Context/AppDbContext.cs" />
         <option value="$PROJECT_DIR$/Client/App.razor" />
         <option value="$PROJECT_DIR$/Client/Shared/MainLayout.razor" />
         <option value="$PROJECT_DIR$/Client/Pages/Index.razor" />
@@ -149,15 +162,16 @@
         <option value="$PROJECT_DIR$/Shared/Repository/IAddressRepository.cs" />
         <option value="$PROJECT_DIR$/Client/_Imports.razor" />
         <option value="$PROJECT_DIR$/Server/Controllers/AddressController.cs" />
-        <option value="$PROJECT_DIR$/Client/Pages/NewPerson.razor" />
         <option value="$PROJECT_DIR$/Client/Pages/Compositions/PersonForm.razor" />
-        <option value="$PROJECT_DIR$/Shared/Models/Person.cs" />
         <option value="$PROJECT_DIR$/Client/Program.cs" />
         <option value="$PROJECT_DIR$/Server/Startup.cs" />
-        <option value="$PROJECT_DIR$/Server/Controllers/PersonController.cs" />
-        <option value="$PROJECT_DIR$/Client/Pages/EditPerson.razor" />
-        <option value="$PROJECT_DIR$/Client/Pages/Compositions/DeletePersonDialog.razor" />
+        <option value="$PROJECT_DIR$/Shared/Context/AppDbContext.cs" />
         <option value="$PROJECT_DIR$/Client/Pages/PersonsTable.razor" />
+        <option value="$PROJECT_DIR$/Client/Pages/Compositions/DeletePersonDialog.razor" />
+        <option value="$PROJECT_DIR$/Shared/Models/Person.cs" />
+        <option value="$PROJECT_DIR$/Server/Controllers/PersonController.cs" />
+        <option value="$PROJECT_DIR$/Client/Pages/NewPerson.razor" />
+        <option value="$PROJECT_DIR$/Client/Pages/EditPerson.razor" />
       </list>
     </option>
   </component>
@@ -270,7 +284,7 @@
       <workItem from="1607154740622" duration="12196000" />
       <workItem from="1607382724596" duration="10271000" />
       <workItem from="1607402162904" duration="35000" />
-      <workItem from="1607402225834" duration="3988000" />
+      <workItem from="1607402225834" duration="11591000" />
     </task>
     <servers />
   </component>

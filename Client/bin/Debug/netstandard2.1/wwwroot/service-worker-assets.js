@@ -69,7 +69,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-0tURrq487+CLsxXMrlnpZ2N+DfhJDm2DN7jmP+KbgvU=",
+      "hash": "sha256-zZxPXBLAV9Xhq9jt+NOtZa3w5w0fCwv9GFUZtyhfxMI=",
       "url": "_framework\/_bin\/PeopleDB.Client.dll"
     },
     {
@@ -221,7 +221,7 @@
       "url": "_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
-      "hash": "sha256-iJFvALlHuN6uxyaqSiyEKOlu+7LbuS0TF0lGwUbbGAk=",
+      "hash": "sha256-i\/YnoXqYNPG9CDbvAEKX2koGy6kvW1keCqoU638C8sM=",
       "url": "_framework\/_bin\/PeopleDB.Shared.dll"
     },
     {
@@ -377,11 +377,11 @@
       "url": "_framework\/_bin\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-v7SfVJAWcXiC0RQGKtFLFSbjJSIgTrGLj1PcxsABcJU=",
+      "hash": "sha256-S5VqoYksOxt1GzbovlIZ5cK6NsRTHlIxspP8JuKRkXk=",
       "url": "_framework\/_bin\/PeopleDB.Client.pdb"
     },
     {
-      "hash": "sha256-q6zQVMw88b0GQwIpzliwLTrcaQFFrI05JmwzbAfeyB0=",
+      "hash": "sha256-Z4BFboRCo+bwux1xLyFIuijcxMcSrmn31OPqOLV8hFc=",
       "url": "_framework\/_bin\/PeopleDB.Shared.pdb"
     },
     {
@@ -401,9 +401,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-jz78DLmoFM1ssXYDJtmDA0NAG62ndvLj3Komo202tX4=",
+      "hash": "sha256-LF5bkEHGNAyYXOl4n5tQz4oqPNnmWNCw1InV2nHfws0=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "6Sz7oWiS"
+  "version": "h9Elg+OO"
 };

@@ -122,6 +122,8 @@
           <e p="20201206210714_ChangeSinToString.Designer.cs" t="Include" />
           <e p="20201207020716_AddConstraintsToSin.cs" t="Include" />
           <e p="20201207020716_AddConstraintsToSin.Designer.cs" t="Include" />
+          <e p="20201208073328_MakeSinUniqueIndex.cs" t="Include" />
+          <e p="20201208073328_MakeSinUniqueIndex.Designer.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">

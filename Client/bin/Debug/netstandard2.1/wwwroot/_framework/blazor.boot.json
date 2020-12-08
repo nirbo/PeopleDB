@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "PeopleDB.Client.dll": "sha256-0tURrq487+CLsxXMrlnpZ2N+DfhJDm2DN7jmP+KbgvU=",
+      "PeopleDB.Client.dll": "sha256-zZxPXBLAV9Xhq9jt+NOtZa3w5w0fCwv9GFUZtyhfxMI=",
       "System.Text.Json.dll": "sha256-M1pYQBRnwZmTq5CodeZxTzsPoWvxBmTSTyy3y0pe8P0=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-kL\/omZDwqByAi+lPdMeDmr3XjHcn4RVb+LmZ4mut1Yc=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -44,7 +44,7 @@
       "Microsoft.AspNetCore.Components.dll": "sha256-A1FNAHZltX6j1uITGR2AmpE0HH1+iAQhYiPy8WEs6+A=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-158xXzg17TGmKMk8Its2Zi5awTua+JPcxgL49yWK2cI=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-AV8hgKJvxEXM5wtB0rWrbSVD+jqppNW1JXqLoZhO794=",
-      "PeopleDB.Shared.dll": "sha256-iJFvALlHuN6uxyaqSiyEKOlu+7LbuS0TF0lGwUbbGAk=",
+      "PeopleDB.Shared.dll": "sha256-i\/YnoXqYNPG9CDbvAEKX2koGy6kvW1keCqoU638C8sM=",
       "Pomelo.EntityFrameworkCore.MySql.dll": "sha256-xZ8+JTBNW+bJdwavftObsfb01wr6\/wnmbgvQzWZjIFQ=",
       "System.Diagnostics.DiagnosticSource.dll": "sha256-MyQpxJogZX2HZkOwjTQKfhArqV0\/EJJxgpF\/E+YjP2w=",
       "System.Runtime.Extensions.dll": "sha256-1FBfAreOfbXDp0WA294BCrk0EIa5ZqlghOuvDlqFtk8=",
@@ -85,8 +85,8 @@
       "MudBlazor.dll": "sha256-sxN7QMo9vZ7lY7sjW9xnNcWCMd8Z+6dHv\/Tf\/hjPRiM="
     },
     "pdb": {
-      "PeopleDB.Client.pdb": "sha256-v7SfVJAWcXiC0RQGKtFLFSbjJSIgTrGLj1PcxsABcJU=",
-      "PeopleDB.Shared.pdb": "sha256-q6zQVMw88b0GQwIpzliwLTrcaQFFrI05JmwzbAfeyB0="
+      "PeopleDB.Client.pdb": "sha256-S5VqoYksOxt1GzbovlIZ5cK6NsRTHlIxspP8JuKRkXk=",
+      "PeopleDB.Shared.pdb": "sha256-Z4BFboRCo+bwux1xLyFIuijcxMcSrmn31OPqOLV8hFc="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",

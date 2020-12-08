@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PeopleDB.Shared.Models;
@@ -35,9 +38,16 @@ namespace PeopleDB.Server.Controllers {
 
             return Ok(person);
         }
-
+        
         [HttpPost("Create")]
         public async Task<IActionResult> CreatePerson([FromBody] Person person) {
+            List<Person> allPersons = personRepository.GetAllPersons()
+                .Where(p => p.sin == person.sin)
+                .ToList();
+            if (allPersons.Count > 0) {
+                return BadRequest("DuplicateSIN");
+            }
+
             Person createdPerson = await personRepository.CreatePerson(person);
             if (createdPerson == null) {
                 return BadRequest("An error has occurred, please try again");
@@ -48,6 +58,13 @@ namespace PeopleDB.Server.Controllers {
         
         [HttpPut("Update")]
         public IActionResult UpdatePerson([FromBody] Person person) {
+            List<Person> allPersons = personRepository.GetAllPersons()
+                .Where(p => p.sin == person.sin)
+                .ToList();
+            if (allPersons.Count > 0) {
+                return BadRequest("DuplicateSIN");
+            }
+            
             if (person == null) throw new ArgumentNullException(nameof(person));
             personRepository.UpdatePerson(person);
             
