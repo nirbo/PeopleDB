@@ -26,7 +26,7 @@ namespace PeopleDB.Server.Controllers {
             return Ok(allPersons);
         }
 
-        [HttpGet("Get/{id}")]
+        [HttpGet("Get/{id}", Name = "GetPersonById")]
         public async Task<IActionResult> GetPersonById(uint? id) {
             Person person = await personRepository.GetPersonById(id);
             if (person == null) {
@@ -39,17 +39,18 @@ namespace PeopleDB.Server.Controllers {
         [HttpPost("Create")]
         public async Task<IActionResult> CreatePerson([FromBody] Person person) {
             Person createdPerson = await personRepository.CreatePerson(person);
-            if (createdPerson != null) {
-                return new CreatedAtActionResult("GetPerson", "Person", new { createdPerson.Id }, createdPerson);
-            } else {
+            if (createdPerson == null) {
                 return BadRequest("An error has occurred, please try again");
             }
+            
+            return Ok(person);
         }
         
         [HttpPut("Update")]
         public IActionResult UpdatePerson([FromBody] Person person) {
             if (person == null) throw new ArgumentNullException(nameof(person));
             personRepository.UpdatePerson(person);
+            
             return Ok("The person was updated successfully");
         }
 
