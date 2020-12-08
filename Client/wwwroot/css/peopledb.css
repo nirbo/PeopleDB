@@ -35,3 +35,10 @@
     margin-left: 37.5%; 
     margin-top: 20%;
 }
+
+.delete-dialog {
+    background-color: #3C3C43;
+    height: 30%;
+    width: 40%;
+    margin: auto;
+}

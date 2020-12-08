@@ -49,7 +49,7 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-Ws8jWEh3l6SZSYb223RmuztGidP9TPTmoP+9W3eWvFs=",
+      "hash": "sha256-Tkei7oJCxdyWPd8iwMbl8JhGIEchfPsiCUzpCEiYpqs=",
       "url": "css\/peopledb.css"
     },
     {
@@ -69,7 +69,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-zZxPXBLAV9Xhq9jt+NOtZa3w5w0fCwv9GFUZtyhfxMI=",
+      "hash": "sha256-gX7LLxbagJVs+6Dkyf6fXWuE3wxZbj4vf0vqKovqalw=",
       "url": "_framework\/_bin\/PeopleDB.Client.dll"
     },
     {
@@ -377,7 +377,7 @@
       "url": "_framework\/_bin\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-S5VqoYksOxt1GzbovlIZ5cK6NsRTHlIxspP8JuKRkXk=",
+      "hash": "sha256-Nja7lLSJ+W+0GT4NnqtHn3sMM0u+G4AAddLEP749p9Y=",
       "url": "_framework\/_bin\/PeopleDB.Client.pdb"
     },
     {
@@ -401,9 +401,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-LF5bkEHGNAyYXOl4n5tQz4oqPNnmWNCw1InV2nHfws0=",
+      "hash": "sha256-KpRKpve3v5Uv9vhh3IX\/n9bDgKfj6Dm7rrmdd9KzpP8=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "h9Elg+OO"
+  "version": "EpwkgK4U"
 };
