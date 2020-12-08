@@ -13,7 +13,7 @@ else {
         <ToolBarContent>
             <MudButton Color="Color.Success" Size="Size.Large" StartIcon="@Filled.Add" Link="/person/new">Add Person</MudButton>
             <MudToolBarSpacer/>
-            <MudTextField @bind-Value="search_string" Placeholder="Search" Immediate="true" Adornment="Adornment.Start" AdornmentIcon="@Filled.Search" IconSize="Size.Medium" HelperText="Case sensitive" Class="mt-0"></MudTextField>
+            <MudTextField @bind-Value="search_string" Placeholder="Search" Immediate="true" Adornment="Adornment.Start" AdornmentIcon="@Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
         </ToolBarContent>
         <HeaderContent>
             <MudTh>First Name</MudTh>
@@ -32,7 +32,8 @@ else {
             <MudTd DataLabel="Pets">@context.pets</MudTd>
             <MudTd DataLabel="Vehicles">@context.vehicles</MudTd>
             <MudTd DataLabel="Actions">
-                <MudButton Color="Color.Tertiary" Link=@($"person/update/" + context.Id)>Edit</MudButton>
+                <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Edit" Link="@($"person/update/" + context.Id)"/>
+                <MudIconButton Color="Color.Error" Icon="@Icons.Material.Delete" OnClick="@((e) => DeletePersonDialog(context))"/>
             </MudTd>
         </RowTemplate>
         <PagerContent>
@@ -42,12 +43,25 @@ else {
 }
 
 @code {
+    async Task DeletePersonDialog(Person person) {
+        DialogParameters dialogParams = new DialogParameters();
+        dialogParams.Add("person", person);
+
+        IDialogReference dialog = Dialog.Show<DeletePersonDialog>("Delete User", dialogParams);
+        DialogResult result = await dialog.Result;
+
+        if (!result.Cancelled) {
+            AllPersons = (await Http.GetFromJsonAsync<List<Person>>("Person/GetAll"));
+        }
+    }
+}
+
+@code {
     private List<Person> AllPersons = new List<Person>();
 
     protected override async Task OnInitializedAsync() {
         AllPersons = await Http.GetFromJsonAsync<List<Person>>("Person/GetAll");
     }
-
 }
 
 @code {
@@ -56,11 +70,11 @@ else {
     bool SearchFilter(Person filteredPerson) {
         if (string.IsNullOrWhiteSpace(search_string))
             return true;
-        if (filteredPerson.firstName.Contains(search_string))
+        if (filteredPerson.firstName.Contains(search_string, StringComparison.InvariantCultureIgnoreCase))
             return true;
-        if (filteredPerson.lastName.Contains(search_string))
+        if (filteredPerson.lastName.Contains(search_string, StringComparison.InvariantCultureIgnoreCase))
             return true;
-        if (filteredPerson.sin.ToString().Contains(search_string))
+        if (filteredPerson.sin.Contains(search_string, StringComparison.InvariantCultureIgnoreCase))
             return true;
         return false;
     }

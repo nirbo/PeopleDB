@@ -17,8 +17,8 @@
     }
 
     async Task UpdatePerson() {
-        HttpResponseMessage statusCode = await Http.PutAsJsonAsync("Person/Update", person);
-        if (statusCode.StatusCode == HttpStatusCode.OK) {
+        HttpResponseMessage httpResponse = await Http.PutAsJsonAsync("Person/Update", person);
+        if (httpResponse.StatusCode == HttpStatusCode.OK) {
             Snackbar.Add("Changes saved successfully", Severity.Success);
             NavigationManager.NavigateTo("/person");
         } else {

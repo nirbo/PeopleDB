@@ -15,6 +15,7 @@
         </e>
         <e p="Pages" t="Include">
           <e p="Compositions" t="Include">
+            <e p="DeletePersonDialog.razor" t="Include" />
             <e p="PersonForm.razor" t="Include" />
           </e>
           <e p="EditPerson.razor" t="Include" />

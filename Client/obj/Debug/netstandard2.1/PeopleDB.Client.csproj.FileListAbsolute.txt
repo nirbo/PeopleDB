@@ -510,7 +510,9 @@
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/QC2lFdhGg2mRa2tR3yhZ47dJn2L5nn4cRFtCHgTXc2c=.hash
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/iJFvALlHuN6uxyaqSiyEKOlu_7LbuS0TF0lGwUbbGAk=.hash
 /Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/q6zQVMw88b0GQwIpzliwLTrcaQFFrI05JmwzbAfeyB0=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/g_MTof7eF2TpDJgEp2SQpy8H8PekXDgKYgiTdzP40TI=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/HPittnAQsm2T2auAmAblkuI3KFWuo2WjFvmgReTFmHs=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/xoHePd_p6ReZ-OpMYVAFnA9mlMZn86I2Fbx9-QqDS9U=.hash
-/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/WWvTY1uvpdL0CBsIGulMqwcm4u4QYx_baBJmUMlaGMk=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Compositions/DeletePersonDialog.razor.g.cs
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/Razor/Pages/Compositions/DeletePersonDialog.razor.g.cs
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/0tURrq487_CLsxXMrlnpZ2N_DfhJDm2DN7jmP_KbgvU=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/v7SfVJAWcXiC0RQGKtFLFSbjJSIgTrGLj1PcxsABcJU=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/jz78DLmoFM1ssXYDJtmDA0NAG62ndvLj3Komo202tX4=.hash
+/Users/nbenor/dev/PeopleDB/Client/obj/Debug/netstandard2.1/integrity/Wn8pZxH3u10p-wrc47YpH81-eLAK59ffXJe0HrQLFig=.hash
