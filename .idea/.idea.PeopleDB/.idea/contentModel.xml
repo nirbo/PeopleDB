@@ -70,6 +70,8 @@
         <e p="Controllers" t="Include">
           <e p="AddressController.cs" t="Include" />
           <e p="PersonController.cs" t="Include" />
+          <e p="PetController.cs" t="Include" />
+          <e p="VehicleController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
           <e p="20201203014248_InitialMigration.cs" t="Include" />
@@ -144,7 +146,11 @@
           <e p="AddressRepository.cs" t="Include" />
           <e p="IAddressRepository.cs" t="Include" />
           <e p="IPersonRepository.cs" t="Include" />
+          <e p="IPetRepository.cs" t="Include" />
+          <e p="IVehicleRepository.cs" t="Include" />
           <e p="PersonRepository.cs" t="Include" />
+          <e p="PetRepository.cs" t="Include" />
+          <e p="VehicleRepository.cs" t="Include" />
         </e>
       </e>
     </e>

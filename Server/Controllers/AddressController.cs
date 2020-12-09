@@ -39,11 +39,11 @@ namespace PeopleDB.Server.Controllers {
         [HttpPost("Create")]
         public async Task<IActionResult> CreateAddress([FromBody] Address address) {
             Address createdAddress = await addressRepository.CreateAddress(address);
-            if (createdAddress != null) {
-                return new CreatedAtActionResult("GetAddress", "Address", new { createdAddress.Id }, createdAddress);
-            } else {
+            if (createdAddress == null) {
                 return BadRequest("An error has occurred, please try again");
             }
+
+            return Ok(address);
         }
         
         [HttpPut("Update")]

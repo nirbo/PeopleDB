@@ -10,6 +10,14 @@ namespace PeopleDB.Shared.Context {
             modelBuilder.Entity<Person>()
                 .HasIndex(p => p.sin)
                 .IsUnique();
+
+            modelBuilder.Entity<Pet>()
+                .HasIndex(p => p.PetRegistrationNumber)
+                .IsUnique();
+            
+            modelBuilder.Entity<Vehicle>()
+                .HasIndex(v => v.VehicleIdNumber)
+                .IsUnique();
         }
 
         public DbSet<Person> Persons { get; set; }

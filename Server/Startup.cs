@@ -32,6 +32,8 @@ namespace PeopleDB.Server
                 options.UseMySql(Configuration.GetConnectionString("MySqlConnection")));
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient<IAddressRepository, AddressRepository>();
+            services.AddTransient<IPetRepository, PetRepository>();
+            services.AddTransient<IVehicleRepository, VehicleRepository>();
             
             services.AddMudBlazorSnackbar(config =>
             {
