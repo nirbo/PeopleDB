@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -31,9 +32,9 @@ namespace PeopleDB.Shared.Repository {
         }
 
         public async Task<Pet> CreatePet(Pet pet) {
-            await _dbContext.Persons.FirstAsync(p => p.Id == pet.PersonId);
+            Person petOwner = await _dbContext.Persons.SingleOrDefaultAsync(p => p.Id == pet.PersonId);
             await _dbContext.Pets.AddAsync(pet);
-            pet.Person.Pets.Add(pet);
+            petOwner.Pets.Add(pet);
             await _dbContext.SaveChangesAsync();
             
             return pet;

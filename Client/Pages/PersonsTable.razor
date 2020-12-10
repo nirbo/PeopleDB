@@ -48,7 +48,7 @@
             </MudTd>
             <MudTd DataLabel="Pets" Style="text-align: center;">
                 <MudIconButton Class="action-btn" Color="Color.Success" Size="Size.Medium" Icon="@Icons.Material.Add" Link="@($"pet/new/" + context.Id)"></MudIconButton>
-                @if (!personPet(context)) {
+                @if (personPet(context)) {
                     <MudIconButton Class="action-btn" Color="Color.Warning" Size="Size.Medium" Icon="@Icons.Material.RemoveRedEye" Link="@($"pet/list/" + context.Id)"></MudIconButton>
                 } else {
                     <MudIconButton Disabled="true" Size="Size.Medium" Icon="@Icons.Material.RemoveRedEye"></MudIconButton>

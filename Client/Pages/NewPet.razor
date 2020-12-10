@@ -13,7 +13,8 @@
     Pet pet = new Pet();
 
     async Task CreatePet() {
-        HttpResponseMessage httpResponse = await Http.PostAsJsonAsync("Pet/Create/" + petOwnerId, pet);
+        pet.PersonId = Convert.ToUInt32(petOwnerId);
+        HttpResponseMessage httpResponse = await Http.PostAsJsonAsync("Pet/Create/" + pet.PersonId, pet);
         if (httpResponse.Content.ReadAsStringAsync().Result == "DuplicatePetRegNumber") {
             Snackbar.Add("Pet Registration Number already exists, unable to proceed", Severity.Error);
         } else if (httpResponse.StatusCode == HttpStatusCode.OK) {

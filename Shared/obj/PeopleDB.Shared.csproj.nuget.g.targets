@@ -4,6 +4,9 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)pomelo.entityframeworkcore.mysql.nettopologysuite/5.0.0-alpha.2/build/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.NetTopologySuite.targets" Condition="Exists('$(NuGetPackageRoot)pomelo.entityframeworkcore.mysql.nettopologysuite/5.0.0-alpha.2/build/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.NetTopologySuite.targets')" />
+    <Import Project="$(NuGetPackageRoot)pomelo.entityframeworkcore.mysql.json.newtonsoft/5.0.0-alpha.2/build/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.Json.Newtonsoft.targets" Condition="Exists('$(NuGetPackageRoot)pomelo.entityframeworkcore.mysql.json.newtonsoft/5.0.0-alpha.2/build/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.Json.Newtonsoft.targets')" />
+    <Import Project="$(NuGetPackageRoot)pomelo.entityframeworkcore.mysql.json.microsoft/5.0.0-alpha.2/build/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.Json.Microsoft.targets" Condition="Exists('$(NuGetPackageRoot)pomelo.entityframeworkcore.mysql.json.microsoft/5.0.0-alpha.2/build/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.Json.Microsoft.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.analyzers/3.1.8/buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.analyzers/3.1.8/buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets')" />
   </ImportGroup>
 </Project>

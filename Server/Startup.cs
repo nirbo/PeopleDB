@@ -31,7 +31,8 @@ namespace PeopleDB.Server
             services.AddControllers().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddDbContext<AppDbContext>(options =>
-                options.UseMySql(Configuration.GetConnectionString("MySqlConnection")));
+                options.UseMySql(Configuration.GetConnectionString("MySqlConnection"), 
+                    ServerVersion.AutoDetect(Configuration.GetConnectionString("MySqlConnection"))));
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient<IAddressRepository, AddressRepository>();
             services.AddTransient<IPetRepository, PetRepository>();
