@@ -1,0 +1,77 @@
+@using System.Xml.Schema
+
+@if (Address.Address1 == null && FormTitle.Contains("Edit")) {
+    <MudPaper Class="d-flex flex-column align-center justify-center py-2 px-1 table-loading-mudpaper" Elevation="12">
+        <MudText Typo="Typo.h5" Align="Align.Center">Loading Form Data...</MudText>
+        <MudProgressCircular Color="Color.Primary" Indeterminate="true" Class="mt-6 pa-2 mx-2 align-self-center"/>
+    </MudPaper>
+} else {
+    <MudPaper Class="ma-4 pa-8" Elevation="12" Style="height: 100%;">
+        <MudText Typo="Typo.h5" Align="Align.Center" Class="my-4">@FormTitle</MudText>
+        <EditForm Model="@Address" OnValidSubmit="@OnValidSubmit">
+            <DataAnnotationsValidator/>
+            <MudCard Elevation="0" Style="width: 50%;" Class="mx-auto">
+                <MudCardContent>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 1" @bind-Value="Address.Address1" For="@(() => Address.Address1)" Immediate="true" Required="true"/>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 2" @bind-Value="Address.Address2" For="@(() => Address.Address2)"/>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="City" @bind-Value="Address.City" For="@(() => Address.City)" Immediate="true" Required="true"/>
+                    <MudSelect Class="my-1" T="string" Label="Province" Variant="Variant.Outlined" @bind-Value="Address.Province" For="@(() => Address.Province)" Immediate="true" Required="true" OffsetY="true" Dense="true">
+                        @if (canadaProvinces != null) {
+                            foreach (string province in canadaProvinces) {
+                                <MudSelectItem Value="@(province)"/>
+                            }
+                        }
+                    </MudSelect>
+                    <MudSelect Class="my-1" T="string" Label="Country" Variant="Variant.Outlined" @bind-Value="Address.Country" For="@(() => Address.Country)" Immediate="true" Required="true" OffsetY="true" Dense="true">
+                        @if (countries != null) {
+                            foreach (string country in countries) {
+                                <MudSelectItem Value="@country"/>
+                            }
+                        }
+                    </MudSelect>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Postal Code" @bind-Value="Address.PostalCode" For="@(() => Address.PostalCode)" Immediate="true" Required="true"/>
+                </MudCardContent>
+                <MudCardActions Class="px-0 my-4">
+                    <MudButton ButtonType="ButtonType.Submit" Class="mx-auto" Variant="Variant.Filled" Size="Size.Large" Color="Color.Success">@ButtonText</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </MudPaper>
+}
+
+@code {
+    [Parameter]
+    public Address Address { get; set; }
+
+    [Parameter]
+    public string ButtonText { get; set; } = "Save Address";
+
+    [Parameter]
+    public string FormTitle { get; set; }
+    
+    [Parameter]
+    public EventCallback<EditContext> OnValidSubmit { get; set; }
+}
+
+@code {
+
+    List<string> canadaProvinces = new List<string> {
+        "Alberta",
+        "British Columbia",
+        "Manitoba",
+        "New Brunswick",
+        "Newfoundlands and Labrador",
+        "Northwest Territories",
+        "Nova Scotia",
+        "Nunavut",
+        "Ontario",
+        "Prince Edward Island",
+        "Quebec",
+        "Saskatchewan",
+        "Yukon"
+    };
+
+    List<string> countries = new List<string> { 
+        "Canada"
+    };
+}

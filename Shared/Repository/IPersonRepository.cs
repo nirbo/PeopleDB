@@ -12,7 +12,7 @@ namespace PeopleDB.Shared.Repository {
 
         Task<Person> CreatePerson(Person person);
 
-        void UpdatePerson(Person person);
+        Task UpdatePerson(Person person);
 
         Task<string> DeletePerson(uint? id);
     }

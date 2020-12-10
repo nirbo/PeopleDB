@@ -20,9 +20,6 @@ namespace PeopleDB.Server.Controllers {
         [HttpGet("GetAll")]
         public IActionResult GetAllPersons() {
             List<Person> allPersons = personRepository.GetAllPersons();
-            if (allPersons.Count == 0) {
-                return BadRequest("The DB is empty, please create a new person entry");
-            }
 
             return Ok(allPersons);
         }
@@ -60,7 +57,9 @@ namespace PeopleDB.Server.Controllers {
                 .Where(p => p.sin == person.sin)
                 .ToList();
             if (allPersons.Count > 0) {
-                return BadRequest("DuplicateSIN");
+                if (allPersons[0].sin != person.sin) {
+                    return BadRequest("DuplicateSIN");
+                }
             }
             
             if (person == null) throw new ArgumentNullException(nameof(person));

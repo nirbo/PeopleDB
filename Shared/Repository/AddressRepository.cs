@@ -20,7 +20,9 @@ namespace PeopleDB.Shared.Repository {
         }
 
         public async Task<Address> GetAddressById(uint? id) {
-            Address address = await _dbContext.Addresses.FindAsync(id);
+            Address address = await _dbContext.Addresses
+                .Include(a => a.Person)
+                .FirstOrDefaultAsync(a => a.Id == id);
             if (address == null) {
                 return null;
             }
@@ -29,15 +31,18 @@ namespace PeopleDB.Shared.Repository {
         }
 
         public async Task<Address> CreateAddress(Address address) {
+            await _dbContext.Persons.FirstAsync(p => p.Id == address.PersonId);
             await _dbContext.Addresses.AddAsync(address);
-            _dbContext.SaveChanges();
+            address.Person.Addresses.Add(address);
+            await _dbContext.SaveChangesAsync();
+            
             return address;
         }
 
         public void UpdateAddress(Address address) {
             var local = _dbContext.Set<Address>()
                 .Local
-                .FirstOrDefault(entry => entry.Id.Equals(address.Id));
+                .FirstOrDefault(a => a.Id.Equals(address.Id));
 
             if (local != null) {
                 _dbContext.Entry(local).State = EntityState.Detached;

@@ -22,7 +22,7 @@
             Snackbar.Add("SIN already exists, unable to proceed", Severity.Error);
         } else if (httpResponse.StatusCode == HttpStatusCode.OK) {
             Snackbar.Add("Changes saved successfully", Severity.Success);
-            NavigationManager.NavigateTo("/person");
+            NavigationManager.NavigateTo("/people");
         } else {
             Snackbar.Add("Failed to save changes", Severity.Error);
         }

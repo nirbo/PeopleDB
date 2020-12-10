@@ -1,45 +1,54 @@
-@page "/person"
+@page "/people"
+@page "/people/{personId:int}"
 @inject HttpClient Http
 @inject IDialogService Dialog
+@inject NavigationManager NavigationManager
 
-@if (AllPersons.Count == 0) {
+@if (emptyTable) {
     <MudPaper Class="d-flex flex-column align-center justify-center py-2 px-1 table-loading-mudpaper" Elevation="12">
-        <MudText Typo="Typo.h5" Align="Align.Center">Loading Table Data...</MudText>
-        <MudProgressCircular Color="Color.Primary" Indeterminate="true" Class="mt-6 pa-2 mx-2 align-self-center"/>
+        <MudText Typo="Typo.h5" Align="Align.Center">Add Your First Person!</MudText>
+        <MudButton Class="my-4" Color="Color.Success" Bu Size="Size.Large" StartIcon="@Filled.Add" Link="/person/new">Add Person</MudButton>
     </MudPaper>
-}
-else {
+} else {
     <MudTable Items="@AllPersons" Hover="true" Elevation="10" FixedHeader="true" Class="ma-4 pa-8" Filter="new Func<Person, bool>(SearchFilter)">
         <ColGroup>
-            <col />
-            <col />
-            <col />
-            <col />
-            <col />
-            <col />
+            <col/>
+            <col/>
+            <col/>
+            <col/>
+            <col/>
+            <col/>
             <col style="width: 10%;"/>
         </ColGroup>
         <ToolBarContent>
             <MudButton Color="Color.Success" Size="Size.Large" StartIcon="@Filled.Add" Link="/person/new">Add Person</MudButton>
             <MudToolBarSpacer/>
-            <MudTextField @bind-Value="search_string" Placeholder="Search" Immediate="true" Adornment="Adornment.Start" AdornmentIcon="@Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+            <MudTextField @bind-Value="searchString" Placeholder="Search" Immediate="true" Adornment="Adornment.Start" AdornmentIcon="@Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
         </ToolBarContent>
         <HeaderContent>
             <MudTh>First Name</MudTh>
             <MudTh>Last Name</MudTh>
             <MudTh>SIN</MudTh>
-            <MudTh>Address</MudTh>
-            <MudTh>Pets</MudTh>
-            <MudTh>Vehicles</MudTh>
+            <MudTh Style="text-align: center;">Address</MudTh>
+            <MudTh Style="text-align: center;">Pets</MudTh>
+            <MudTh Style="text-align: center;">Vehicles</MudTh>
             <MudTh Style="text-align: center;">Actions</MudTh>
         </HeaderContent>
         <RowTemplate>
             <MudTd DataLabel="First Name">@context.firstName</MudTd>
             <MudTd DataLabel="Last Name">@context.lastName</MudTd>
             <MudTd DataLabel="SIN">@context.sin</MudTd>
-            <MudTd DataLabel="Address">@context.address</MudTd>
-            <MudTd DataLabel="Pets">@context.pets</MudTd>
-            <MudTd DataLabel="Vehicles">@context.vehicles</MudTd>
+            <MudTd DataLabel="Address" Style="text-align: center;">
+                @if (!personAddress(context)) {
+                    <MudIconButton Color="Color.Success" Size="Size.Medium" Icon="@Icons.Material.Add" Link="@($"address/new/" + context.Id)"></MudIconButton>
+                }
+                else {
+                    <MudIconButton Color="Color.Tertiary" Size="Size.Medium" Icon="@Icons.Material.Edit" Link="@($"address/update/" + addressIdToUpdate(context))"></MudIconButton>
+                }
+                <MudIconButton Color="Color.Error" Icon="@Icons.Material.Delete" OnClick="@((e) => DeleteAddressDialog(context))"/>
+            </MudTd>
+            <MudTd DataLabel="Pets" Style="text-align: center;"></MudTd>
+            <MudTd DataLabel="Vehicles" Style="text-align: center;"></MudTd>
             <MudTd DataLabel="Actions" Style="text-align: center;">
                 <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Edit" Link="@($"person/update/" + context.Id)"/>
                 <MudIconButton Color="Color.Error" Icon="@Icons.Material.Delete" OnClick="@((e) => DeletePersonDialog(context))"/>
@@ -49,6 +58,37 @@ else {
             <MudTablePager PageSizeOptions="new[] {10, 25}"/>
         </PagerContent>
     </MudTable>
+}
+
+@code {
+    private string addressIdToUpdate(Person addressOwner) {
+        return addressOwner.Addresses[0].Id.ToString();
+    }
+}
+
+@code {
+    private bool personAddress(Person addressOwner) {
+        uint ownerAddressCount = (uint) addressOwner.Addresses.Count;
+        if (ownerAddressCount > 0) {
+            return true;
+        }
+
+        return false;
+    }
+}
+
+@code {
+    async Task DeleteAddressDialog(Person person) {
+        DialogParameters dialogParams = new DialogParameters();
+        dialogParams.Add("address", person.Addresses[0]);
+
+        IDialogReference dialog = Dialog.Show<DeleteAddressDialog>("Delete Address For User: " + person.firstName + " " + person.lastName, dialogParams);
+        DialogResult result = await dialog.Result;
+
+        if (!result.Cancelled) {
+            AllPersons = (await Http.GetFromJsonAsync<List<Person>>("Person/GetAll"));
+        }
+    }
 }
 
 @code {
@@ -66,26 +106,39 @@ else {
 }
 
 @code {
+    [Parameter]
+    public int personId { get; set; }
+
     private List<Person> AllPersons = new List<Person>();
+    bool emptyTable = false;
 
     protected override async Task OnInitializedAsync() {
-        AllPersons = await Http.GetFromJsonAsync<List<Person>>("Person/GetAll");
+        if (personId != 0) {
+            Person singlePerson = await Http.GetFromJsonAsync<Person>("Person/Get/" + (uint) personId);
+            AllPersons.Clear();
+            AllPersons.Add(singlePerson);
+        } else {
+            AllPersons = await Http.GetFromJsonAsync<List<Person>>("Person/GetAll");
+            if (AllPersons.Count == 0) {
+                emptyTable = true;
+            }
+        }
     }
 }
 
 @code {
-    private string search_string = "";
+    private string searchString = "";
 
     bool SearchFilter(Person filteredPerson) {
-        if (string.IsNullOrWhiteSpace(search_string))
+        if (string.IsNullOrWhiteSpace(searchString))
             return true;
-        if (filteredPerson.firstName.Contains(search_string, StringComparison.InvariantCultureIgnoreCase))
+        if (filteredPerson.firstName.Contains(searchString, StringComparison.InvariantCultureIgnoreCase))
             return true;
-        if (filteredPerson.lastName.Contains(search_string, StringComparison.InvariantCultureIgnoreCase))
+        if (filteredPerson.lastName.Contains(searchString, StringComparison.InvariantCultureIgnoreCase))
             return true;
-        if (filteredPerson.sin.Contains(search_string, StringComparison.InvariantCultureIgnoreCase))
+        if (filteredPerson.sin.Contains(searchString, StringComparison.InvariantCultureIgnoreCase))
             return true;
+        
         return false;
     }
-
 }

@@ -1,0 +1,25 @@
+@page "/address/new/{addressOwnerId}"
+@using System.Net
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject ISnackbar Snackbar
+
+<AddressForm Address="@address" ButtonText="Create Address" FormTitle="Add Address" OnValidSubmit="@CreateAddress"/>
+
+@code {
+    [Parameter]
+    public string addressOwnerId { get; set; }
+    
+    Address address = new Address();
+
+    async Task CreateAddress() {
+        address.PersonId = Convert.ToUInt32(addressOwnerId);
+        HttpResponseMessage httpResponse = await Http.PostAsJsonAsync("Address/Create/" + address.PersonId, address);
+        if (httpResponse.StatusCode == HttpStatusCode.OK) {
+            Snackbar.Add("Address entry created successfully", Severity.Success);
+            NavigationManager.NavigateTo("/people/" + addressOwnerId);
+        } else {
+            Snackbar.Add("Failed to create new address", Severity.Error);
+        }
+    }
+}

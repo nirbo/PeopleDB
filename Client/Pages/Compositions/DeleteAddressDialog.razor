@@ -1,0 +1,34 @@
+@using System.Net
+@inject ISnackbar Snackbar
+@inject HttpClient Http
+
+<MudDialog>
+    <DialogContent>
+        Are you sure you wish to proceed?
+    </DialogContent>
+    <DialogActions>
+        <MudButton Color="Color.Tertiary" OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Error" OnClick="DeleteAddress">Delete</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter] 
+    MudDialogInstance MudDialog { get; set; }
+
+    [Parameter]
+    public Address address { get; set; } = new Address();
+
+    void Cancel() => MudDialog.Cancel();
+
+    private async Task DeleteAddress() {
+        HttpResponseMessage httpResponse = await Http.DeleteAsync("address/delete/" + address.Id);
+        if (httpResponse.StatusCode == HttpStatusCode.OK) {
+            Snackbar.Add("Address deleted successfully", Severity.Success);
+            await MudDialog.Close(DialogResult.Ok(address.Id));
+        } else {
+            Snackbar.Add("Failed to delete, please try again", Severity.Error);
+            await MudDialog.Cancel();
+        }
+    }
+}

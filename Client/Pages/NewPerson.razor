@@ -6,22 +6,6 @@
 
 <PersonForm Person="@person" ButtonText="Create Person" FormTitle="Add Person" OnValidSubmit="@CreatePerson"/>
 
-        @*         <MudText Typo="Typo.h5" Align="Align.Center" Class="mb-4 mt-16">Address</MudText> *@
-@*         <EditForm Model="@address" OnValidSubmit="addressValidSubmit"> *@
-@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 1" @bind-Value="address.Address1" For="@(() => address.Address1)" Immediate="true" Required="true"/> *@
-@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Address 2" @bind-Value="address.Address2" For="@(() => address.Address2)"/> *@
-@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="City" @bind-Value="address.City" For="@(() => address.City)" Immediate="true" Required="true"/> *@
-@*             <MudSelect Class="my-1" T="string" Label="Province" Variant="Variant.Outlined" Immediate="true" Required="true" OffsetY="true" Dense="true"> *@
-@*                 @if (canadaProvinces != null) { *@
-@*                     foreach (string province in canadaProvinces) { *@
-@*                         <MudSelectItem Value="@(province)"/> *@
-@*                     } *@
-@*                 } *@
-@*             </MudSelect> *@
-@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Country" @bind-Value="address.Country" For="@(() => address.Country)" Immediate="true" Required="true"/> *@
-@*             <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Postal Code" @bind-Value="address.PostalCode" For="@(() => address.PostalCode)" Immediate="true" Required="true"/> *@
-@*         </EditForm> *@
-
 @code {
     Person person = new Person();
     
@@ -31,50 +15,9 @@
             Snackbar.Add("SIN already exists, unable to proceed", Severity.Error);
         } else if (httpResponse.StatusCode == HttpStatusCode.OK) {
             Snackbar.Add("Person entry created successfully", Severity.Success);
-            NavigationManager.NavigateTo("/person");
+            NavigationManager.NavigateTo("/people");
         } else {
             Snackbar.Add("Failed to create new person", Severity.Error);
         }
     }
-
-    // Address address = new Address();
-    // bool addressSuccess;
-    
-    // public class NewAddressValidate {
-    //     [Required]
-    //     public string address1 { get; set; }
-    //     
-    //     [Required]
-    //     public string address2 { get; set; }
-    //     
-    //     [Required]
-    //     public string city { get; set; }
-    //     
-    //     [Required]
-    //     public string province { get; set; }
-    //     
-    //     [Required]
-    //     public string country { get; set; }
-    //     
-    //     [Required]
-    //     public string postalCode { get; set; }
-    // }
-}
-
-@* @code { *@
-@*     List<string> canadaProvinces = new List<string> { *@
-@*         "Alberta", *@
-@*         "British Columbia", *@
-@*         "Manitoba", *@
-@*         "New Brunswick", *@
-@*         "Newfoundlands and Labrador", *@
-@*         "Northwest Territories", *@
-@*         "Nova Scotia", *@
-@*         "Nunavut", *@
-@*         "Ontario", *@
-@*         "Prince Edward Island", *@
-@*         "Quebec", *@
-@*         "Saskatchewan", *@
-@*         "Yukon" *@
-@*     }; *@
 }

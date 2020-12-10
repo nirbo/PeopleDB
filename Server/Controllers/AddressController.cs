@@ -36,7 +36,7 @@ namespace PeopleDB.Server.Controllers {
             return Ok(address);
         }
 
-        [HttpPost("Create")]
+        [HttpPost("Create/{id}")]
         public async Task<IActionResult> CreateAddress([FromBody] Address address) {
             Address createdAddress = await addressRepository.CreateAddress(address);
             if (createdAddress == null) {
@@ -50,6 +50,7 @@ namespace PeopleDB.Server.Controllers {
         public IActionResult UpdateAddress([FromBody] Address address) {
             if (address == null) throw new ArgumentNullException(nameof(address));
             addressRepository.UpdateAddress(address);
+            
             return Ok("The address was updated successfully");
         }
 

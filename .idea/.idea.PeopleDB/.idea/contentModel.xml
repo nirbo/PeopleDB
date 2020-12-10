@@ -15,11 +15,15 @@
         </e>
         <e p="Pages" t="Include">
           <e p="Compositions" t="Include">
+            <e p="AddressForm.razor" t="Include" />
+            <e p="DeleteAddressDialog.razor" t="Include" />
             <e p="DeletePersonDialog.razor" t="Include" />
             <e p="PersonForm.razor" t="Include" />
           </e>
+          <e p="EditAddress.razor" t="Include" />
           <e p="EditPerson.razor" t="Include" />
           <e p="Index.razor" t="Include" />
+          <e p="NewAddress.razor" t="Include" />
           <e p="NewPerson.razor" t="Include" />
           <e p="PersonsTable.razor" t="Include" />
         </e>
@@ -126,6 +130,20 @@
           <e p="20201207020716_AddConstraintsToSin.Designer.cs" t="Include" />
           <e p="20201208073328_MakeSinUniqueIndex.cs" t="Include" />
           <e p="20201208073328_MakeSinUniqueIndex.Designer.cs" t="Include" />
+          <e p="20201209041244_AddUniquesForNewModels.cs" t="Include" />
+          <e p="20201209041244_AddUniquesForNewModels.Designer.cs" t="Include" />
+          <e p="20201209042617_UpdateAddressModelAnnotations.cs" t="Include" />
+          <e p="20201209042617_UpdateAddressModelAnnotations.Designer.cs" t="Include" />
+          <e p="20201209083448_FixForeignKeys.cs" t="Include" />
+          <e p="20201209083448_FixForeignKeys.Designer.cs" t="Include" />
+          <e p="20201209091821_AnotherAttemptToFixForeignKeys.cs" t="Include" />
+          <e p="20201209091821_AnotherAttemptToFixForeignKeys.Designer.cs" t="Include" />
+          <e p="20201209092813_ForeignKeysStill.cs" t="Include" />
+          <e p="20201209092813_ForeignKeysStill.Designer.cs" t="Include" />
+          <e p="20201209163902_FixingForeignKeys.cs" t="Include" />
+          <e p="20201209163902_FixingForeignKeys.Designer.cs" t="Include" />
+          <e p="20201210002549_ChangePersonICollectionToList.cs" t="Include" />
+          <e p="20201210002549_ChangePersonICollectionToList.Designer.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">

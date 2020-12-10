@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.CodeAnalysis;
 
 namespace PeopleDB.Shared.Models {
     [Table("Person")]
@@ -19,11 +18,8 @@ namespace PeopleDB.Shared.Models {
          MinLength(9, ErrorMessage = "SIN must be 9 digits exactly")]
         public string sin { get; set; }
         
-        [AllowNull]
-        public Address address { get; set; }
-        [AllowNull]
-        public ICollection<Vehicle> vehicles { get; set; }
-        [AllowNull]
-        public ICollection<Pet> pets { get; set; }
+        public List<Address> Addresses { get; set; }
+        public List<Vehicle> Vehicles { get; set; }
+        public List<Pet> Pets { get; set; }
     }
 }

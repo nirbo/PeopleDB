@@ -19,29 +19,43 @@ namespace PeopleDB.Server.Migrations
             modelBuilder.Entity("PeopleDB.Shared.Models.Address", b =>
                 {
                     b.Property<uint>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int unsigned");
 
                     b.Property<string>("Address1")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(100) CHARACTER SET utf8mb4")
+                        .HasMaxLength(100);
 
                     b.Property<string>("Address2")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("varchar(50) CHARACTER SET utf8mb4")
+                        .HasMaxLength(50);
 
                     b.Property<string>("City")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(100) CHARACTER SET utf8mb4")
+                        .HasMaxLength(100);
 
                     b.Property<string>("Country")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(100) CHARACTER SET utf8mb4")
+                        .HasMaxLength(100);
+
+                    b.Property<uint>("PersonId")
+                        .HasColumnType("int unsigned");
 
                     b.Property<string>("PostalCode")
+                        .IsRequired()
                         .HasColumnType("varchar(6) CHARACTER SET utf8mb4")
                         .HasMaxLength(6);
 
                     b.Property<string>("Province")
-                        .HasColumnType("varchar(2) CHARACTER SET utf8mb4")
-                        .HasMaxLength(2);
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PersonId");
 
                     b.ToTable("Address");
                 });
@@ -78,6 +92,10 @@ namespace PeopleDB.Server.Migrations
             modelBuilder.Entity("PeopleDB.Shared.Models.Pet", b =>
                 {
                     b.Property<uint>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int unsigned");
+
+                    b.Property<uint>("PersonId")
                         .HasColumnType("int unsigned");
 
                     b.Property<string>("PetName")
@@ -91,19 +109,28 @@ namespace PeopleDB.Server.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("PersonId");
+
+                    b.HasIndex("PetRegistrationNumber")
+                        .IsUnique();
+
                     b.ToTable("Pet");
                 });
 
             modelBuilder.Entity("PeopleDB.Shared.Models.Vehicle", b =>
                 {
                     b.Property<uint>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int unsigned");
+
+                    b.Property<uint>("PersonId")
                         .HasColumnType("int unsigned");
 
                     b.Property<string>("VehicleColor")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("VehicleIdNumber")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.Property<string>("VehicleMake")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -116,14 +143,19 @@ namespace PeopleDB.Server.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("PersonId");
+
+                    b.HasIndex("VehicleIdNumber")
+                        .IsUnique();
+
                     b.ToTable("Vehicle");
                 });
 
             modelBuilder.Entity("PeopleDB.Shared.Models.Address", b =>
                 {
                     b.HasOne("PeopleDB.Shared.Models.Person", "Person")
-                        .WithOne("address")
-                        .HasForeignKey("PeopleDB.Shared.Models.Address", "Id")
+                        .WithMany("Addresses")
+                        .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -131,8 +163,8 @@ namespace PeopleDB.Server.Migrations
             modelBuilder.Entity("PeopleDB.Shared.Models.Pet", b =>
                 {
                     b.HasOne("PeopleDB.Shared.Models.Person", "Person")
-                        .WithMany("pets")
-                        .HasForeignKey("Id")
+                        .WithMany("Pets")
+                        .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -140,8 +172,8 @@ namespace PeopleDB.Server.Migrations
             modelBuilder.Entity("PeopleDB.Shared.Models.Vehicle", b =>
                 {
                     b.HasOne("PeopleDB.Shared.Models.Person", "Person")
-                        .WithMany("vehicles")
-                        .HasForeignKey("Id")
+                        .WithMany("Vehicles")
+                        .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

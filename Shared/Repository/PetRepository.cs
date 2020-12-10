@@ -20,7 +20,7 @@ namespace PeopleDB.Shared.Repository {
         }
 
         public async Task<Pet> GetPetById(uint? id) {
-            Pet pet = await _dbContext.Pets.FindAsync(id);
+            Pet pet = await _dbContext.Pets.FirstAsync(p => p.Id == id);
             if (pet == null) {
                 return null;
             }

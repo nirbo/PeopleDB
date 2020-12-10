@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZQw+/9aqeuSqL7xftlPTOwCUWa+dvnthefn2YbOvZDKrUbQyONa9xwfpksjkkxMCIYY+R31dN9ds8ZFNg0GYLw==",
+  "dgSpecHash": "LsdMDoRptrb5yEjBhJ1lZ7BKq8Fb9Q98wJBICM2sLUWX8DMjrSrvKPjt+glxhOTr7/cWTEMjEzYm1mAKHnNW8g==",
   "success": true,
   "projectFilePath": "/Users/nbenor/dev/PeopleDB/Server/PeopleDB.Server.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,9 @@
     "/Users/nbenor/.nuget/packages/microsoft.aspnetcore.components.webassembly/3.2.1/microsoft.aspnetcore.components.webassembly.3.2.1.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.aspnetcore.components.webassembly.httphandler/3.2.0/microsoft.aspnetcore.components.webassembly.httphandler.3.2.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.aspnetcore.components.webassembly.server/3.2.1/microsoft.aspnetcore.components.webassembly.server.3.2.1.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.10/microsoft.aspnetcore.jsonpatch.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.aspnetcore.metadata/3.1.8/microsoft.aspnetcore.metadata.3.1.8.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.10/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.10.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -43,7 +45,8 @@
     "/Users/nbenor/.nuget/packages/microsoft.jsinterop.webassembly/3.2.1/microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/mudblazor/1.1.5/mudblazor.1.1.5.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/mysqlconnector/0.69.10/mysqlconnector.0.69.10.nupkg.sha512",
-    "/Users/nbenor/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/nbenor/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/pomelo.entityframeworkcore.mysql/3.2.4/pomelo.entityframeworkcore.mysql.3.2.4.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/nbenor/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",

@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/gX7LLxbagJVs_6Dkyf6fXWuE3wxZbj4vf0vqKovqalw=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/6pFl-m5Q93aG9UFPb7Tq3-tP_cKCpbQdK7eG3Z2t4z0=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/PeopleDB.Client.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/PeopleDB.Client.dll.gz"
     },
@@ -191,7 +191,7 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/i-YnoXqYNPG9CDbvAEKX2koGy6kvW1keCqoU638C8sM=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/5TVLn6bLU4mxiAVNiS2mS5FO449GNF0Q9fBPUeaReXo=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/PeopleDB.Shared.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/PeopleDB.Shared.dll.gz"
     },
@@ -386,12 +386,12 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/MudBlazor.dll.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Nja7lLSJ_W_0GT4NnqtHn3sMM0u_G4AAddLEP749p9Y=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Wuveov0IJrJZxA4bywE7Zj3kKy5wOS9pSHST4bHHg_0=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/PeopleDB.Client.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/PeopleDB.Client.pdb.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Z4BFboRCo_bwux1xLyFIuijcxMcSrmn31OPqOLV8hFc=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/L_1NyGEfnQv8YZjauQLPC7vWn6gXrntMHU0lly4j-vw=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/PeopleDB.Shared.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/PeopleDB.Shared.pdb.gz"
     },
@@ -416,12 +416,12 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/KpRKpve3v5Uv9vhh3IX-n9bDgKfj6Dm7rrmdd9KzpP8=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/xw-2DbJaFxcciY-p52MjC2SySpU0hDSmdMoaUO3ZobQ=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/blazor.boot.json",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.gz"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/jDfo7UvP6X9vKJgdVc3Hq0qphT7P5g2c3WfE-J56C9M=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/kg4KcXZiH7pRVI8DTjjsmyWWgHmVlaQCiC3dmvUrbW0=.hash",
       "Source": "\/Users\/nbenor\/dev\/PeopleDB\/Client\/obj\/Debug\/netstandard2.1\/blazor\/service-worker-assets.js",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/service-worker-assets.js.gz"
     }

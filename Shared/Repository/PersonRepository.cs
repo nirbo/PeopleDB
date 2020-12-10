@@ -16,11 +16,19 @@ namespace PeopleDB.Shared.Repository {
         }
         
         public List<Person> GetAllPersons() {
-            return _dbContext.Persons.ToList();
+            return _dbContext.Persons
+                .Include(p => p.Addresses)
+                .Include(p => p.Pets)
+                .Include(p => p.Vehicles)
+                .ToList();
         }
 
         public async Task<Person> GetPersonById(uint? id) {
-            Person person = await _dbContext.Persons.FindAsync(id);
+            Person person = await _dbContext.Persons
+                .Include(p => p.Addresses)
+                .Include(p => p.Pets)
+                .Include(p => p.Vehicles)
+                .FirstOrDefaultAsync(p => p.Id == id);
             if (person == null) {
                 return null;
             }
@@ -34,10 +42,12 @@ namespace PeopleDB.Shared.Repository {
             return person;
         }
 
-        public void UpdatePerson(Person person) {
-            var local = _dbContext.Set<Person>()
-                .Local
-                .FirstOrDefault(entry => entry.Id.Equals(person.Id));
+        public async Task UpdatePerson(Person person) {
+            var local = await _dbContext.Set<Person>()
+                .Include(p => p.Addresses)
+                .Include(p => p.Pets)
+                .Include(p => p.Vehicles)
+                .FirstAsync(entry => entry.Id.Equals(person.Id));
 
             if (local != null) {
                 _dbContext.Entry(local).State = EntityState.Detached;

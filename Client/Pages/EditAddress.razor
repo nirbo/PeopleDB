@@ -1,0 +1,28 @@
+@page "/address/update/{addressId:int}"
+@using System.Net
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject ISnackbar Snackbar
+
+<AddressForm Address="@address" ButtonText="Save Changes" FormTitle="Edit Address" OnValidSubmit="@UpdateAddress"/>
+
+@code {
+    [Parameter]
+    public int addressId { get; set; }
+
+    private Address address = new Address();
+    
+    protected override async Task OnParametersSetAsync() {
+        address = await Http.GetFromJsonAsync<Address>("Address/Get/" + addressId);
+    }
+
+    async Task UpdateAddress() {
+        HttpResponseMessage httpResponse = await Http.PutAsJsonAsync("Address/Update", address);
+        if (httpResponse.StatusCode == HttpStatusCode.OK) {
+            Snackbar.Add("Changes saved successfully", Severity.Success);
+            NavigationManager.NavigateTo("/people/" + address.PersonId);
+        } else {
+            Snackbar.Add("Failed to save changes", Severity.Error);
+        }
+    }
+}
