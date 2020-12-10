@@ -20,7 +20,9 @@ namespace PeopleDB.Shared.Repository {
         }
 
         public async Task<Pet> GetPetById(uint? id) {
-            Pet pet = await _dbContext.Pets.FirstAsync(p => p.Id == id);
+            Pet pet = await _dbContext.Pets
+                .Include(p => p.Person)
+                .FirstOrDefaultAsync(p => p.Id == id);
             if (pet == null) {
                 return null;
             }
@@ -29,15 +31,18 @@ namespace PeopleDB.Shared.Repository {
         }
 
         public async Task<Pet> CreatePet(Pet pet) {
+            await _dbContext.Persons.FirstAsync(p => p.Id == pet.PersonId);
             await _dbContext.Pets.AddAsync(pet);
-            _dbContext.SaveChanges();
+            pet.Person.Pets.Add(pet);
+            await _dbContext.SaveChangesAsync();
+            
             return pet;
         }
 
         public void UpdatePet(Pet pet) {
             var local = _dbContext.Set<Pet>()
                 .Local
-                .FirstOrDefault(entry => entry.Id.Equals(pet.Id));
+                .FirstOrDefault(p => p.Id.Equals(pet.Id));
 
             if (local != null) {
                 _dbContext.Entry(local).State = EntityState.Detached;

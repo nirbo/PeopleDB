@@ -1,0 +1,28 @@
+@page "/pet/new/{petOwnerId}"
+@using System.Net
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject ISnackbar Snackbar
+
+<PetForm Pet="@pet" ButtonText="Save Pet" FormTitle="Add Pet" OnValidSubmit="@CreatePet"/>
+
+@code {
+    [Parameter]
+    public string petOwnerId { get; set; }
+    
+    Pet pet = new Pet();
+
+    async Task CreatePet() {
+        HttpResponseMessage httpResponse = await Http.PostAsJsonAsync("Pet/Create/" + petOwnerId, pet);
+        if (httpResponse.Content.ReadAsStringAsync().Result == "DuplicatePetRegNumber") {
+            Snackbar.Add("Pet Registration Number already exists, unable to proceed", Severity.Error);
+        } else if (httpResponse.StatusCode == HttpStatusCode.OK) {
+            Snackbar.Add("Pet entry saved successfully", Severity.Success);
+            NavigationManager.NavigateTo("/people/" + petOwnerId);
+        } else {
+            Snackbar.Add("Failed to save new pet", Severity.Error);
+        }
+    }
+}
+
+

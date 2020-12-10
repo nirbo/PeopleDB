@@ -4,7 +4,7 @@
 @inject NavigationManager NavigationManager
 @inject ISnackbar Snackbar
 
-<PersonForm Person="@person" ButtonText="Create Person" FormTitle="Add Person" OnValidSubmit="@CreatePerson"/>
+<PersonForm Person="@person" ButtonText="Save Person" FormTitle="Add Person" OnValidSubmit="@CreatePerson"/>
 
 @code {
     Person person = new Person();
@@ -14,10 +14,10 @@
         if (httpResponse.Content.ReadAsStringAsync().Result == "DuplicateSIN") {
             Snackbar.Add("SIN already exists, unable to proceed", Severity.Error);
         } else if (httpResponse.StatusCode == HttpStatusCode.OK) {
-            Snackbar.Add("Person entry created successfully", Severity.Success);
+            Snackbar.Add("Person entry saved successfully", Severity.Success);
             NavigationManager.NavigateTo("/people");
         } else {
-            Snackbar.Add("Failed to create new person", Severity.Error);
+            Snackbar.Add("Failed to save new person", Severity.Error);
         }
     }
 }

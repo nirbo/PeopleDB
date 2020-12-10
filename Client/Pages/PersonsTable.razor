@@ -40,18 +40,25 @@
             <MudTd DataLabel="SIN">@context.sin</MudTd>
             <MudTd DataLabel="Address" Style="text-align: center;">
                 @if (!personAddress(context)) {
-                    <MudIconButton Color="Color.Success" Size="Size.Medium" Icon="@Icons.Material.Add" Link="@($"address/new/" + context.Id)"></MudIconButton>
+                    <MudIconButton Class="action-btn" Color="Color.Success" Size="Size.Medium" Icon="@Icons.Material.Add" Link="@($"address/new/" + context.Id)"></MudIconButton>
+                } else {
+                    <MudIconButton Class="action-btn" Color="Color.Tertiary" Size="Size.Medium" Icon="@Icons.Material.Edit" Link="@($"address/update/" + addressIdToUpdate(context))"></MudIconButton>
                 }
-                else {
-                    <MudIconButton Color="Color.Tertiary" Size="Size.Medium" Icon="@Icons.Material.Edit" Link="@($"address/update/" + addressIdToUpdate(context))"></MudIconButton>
-                }
-                <MudIconButton Color="Color.Error" Icon="@Icons.Material.Delete" OnClick="@((e) => DeleteAddressDialog(context))"/>
+                <MudIconButton Class="action-btn" Color="Color.Error" Icon="@Icons.Material.Delete" OnClick="@((e) => DeleteAddressDialog(context))"/>
             </MudTd>
-            <MudTd DataLabel="Pets" Style="text-align: center;"></MudTd>
+            <MudTd DataLabel="Pets" Style="text-align: center;">
+                <MudIconButton Class="action-btn" Color="Color.Success" Size="Size.Medium" Icon="@Icons.Material.Add" Link="@($"pet/new/" + context.Id)"></MudIconButton>
+                @if (!personPet(context)) {
+                    <MudIconButton Class="action-btn" Color="Color.Warning" Size="Size.Medium" Icon="@Icons.Material.RemoveRedEye" Link="@($"pet/list/" + context.Id)"></MudIconButton>
+                } else {
+                    <MudIconButton Disabled="true" Size="Size.Medium" Icon="@Icons.Material.RemoveRedEye"></MudIconButton>
+                }
+                @* <MudIconButton Class="action-btn" Color="Color.Error" Icon="@Icons.Material.Delete" OnClick="@((e) => DeletePetDialog(context))"/> *@
+            </MudTd>
             <MudTd DataLabel="Vehicles" Style="text-align: center;"></MudTd>
             <MudTd DataLabel="Actions" Style="text-align: center;">
-                <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Edit" Link="@($"person/update/" + context.Id)"/>
-                <MudIconButton Color="Color.Error" Icon="@Icons.Material.Delete" OnClick="@((e) => DeletePersonDialog(context))"/>
+                <MudIconButton Class="action-btn" Color="Color.Tertiary" Icon="@Icons.Material.Edit" Link="@($"person/update/" + context.Id)"/>
+                <MudIconButton Class="action-btn" Color="Color.Error" Icon="@Icons.Material.Delete" OnClick="@((e) => DeletePersonDialog(context))"/>
             </MudTd>
         </RowTemplate>
         <PagerContent>
@@ -63,6 +70,17 @@
 @code {
     private string addressIdToUpdate(Person addressOwner) {
         return addressOwner.Addresses[0].Id.ToString();
+    }
+}
+
+@code {
+    private bool personPet(Person petOwner) {
+        uint ownerPetCount = (uint) petOwner.Pets.Count;
+        if (ownerPetCount > 0) {
+            return true;
+        }
+
+        return false;
     }
 }
 
@@ -82,7 +100,7 @@
         DialogParameters dialogParams = new DialogParameters();
         dialogParams.Add("address", person.Addresses[0]);
 
-        IDialogReference dialog = Dialog.Show<DeleteAddressDialog>("Delete Address For User: " + person.firstName + " " + person.lastName, dialogParams);
+        IDialogReference dialog = Dialog.Show<DeleteAddressDialog>("Delete Address for Person: " + person.firstName + " " + person.lastName, dialogParams);
         DialogResult result = await dialog.Result;
 
         if (!result.Cancelled) {
@@ -96,7 +114,7 @@
         DialogParameters dialogParams = new DialogParameters();
         dialogParams.Add("person", person);
 
-        IDialogReference dialog = Dialog.Show<DeletePersonDialog>("Delete User: " + person.firstName + " " + person.lastName, dialogParams);
+        IDialogReference dialog = Dialog.Show<DeletePersonDialog>("Delete Person: " + person.firstName + " " + person.lastName, dialogParams);
         DialogResult result = await dialog.Result;
 
         if (!result.Cancelled) {

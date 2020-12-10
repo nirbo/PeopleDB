@@ -1,0 +1,39 @@
+@using System.Xml.Schema
+
+@if (Pet.PetName == null && FormTitle.Contains("Edit")) {
+    <MudPaper Class="d-flex flex-column align-center justify-center py-2 px-1 table-loading-mudpaper" Elevation="12">
+        <MudText Typo="Typo.h5" Align="Align.Center">Loading Form Data...</MudText>
+        <MudProgressCircular Color="Color.Primary" Indeterminate="true" Class="mt-6 pa-2 mx-2 align-self-center"/>
+    </MudPaper>
+} else {
+    <MudPaper Class="ma-4 pa-8" Elevation="12" Style="height: 100%;">
+        <MudText Typo="Typo.h5" Align="Align.Center" Class="my-4">@FormTitle</MudText>
+        <EditForm Model="@Pet" OnValidSubmit="@OnValidSubmit">
+            <DataAnnotationsValidator/>
+            <MudCard Elevation="0" Style="width: 50%;" Class="mx-auto">
+                <MudCardContent>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Name" @bind-Value="Pet.PetName" For="@(() => Pet.PetName)" Immediate="true" Required="true"/>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Species" @bind-Value="Pet.PetSpecies" For="@(() => Pet.PetSpecies)" Immediate="true" Required="true"/>
+                    <MudTextField Class="my-1" Variant="Variant.Outlined" Label="Registration Number" @bind-Value="Pet.PetRegistrationNumber" For="@(() => Pet.PetRegistrationNumber)" Immediate="true" Required="true"/>
+                </MudCardContent>
+                <MudCardActions Class="px-0 my-4">
+                    <MudButton ButtonType="ButtonType.Submit" Class="mx-auto" Variant="Variant.Filled" Size="Size.Large" Color="Color.Success">@ButtonText</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </MudPaper>
+}
+
+@code {
+    [Parameter]
+    public Pet Pet { get; set; }
+
+    [Parameter]
+    public string ButtonText { get; set; } = "Save Pet";
+
+    [Parameter]
+    public string FormTitle { get; set; }
+    
+    [Parameter]
+    public EventCallback<EditContext> OnValidSubmit { get; set; }
+}

@@ -19,12 +19,14 @@
             <e p="DeleteAddressDialog.razor" t="Include" />
             <e p="DeletePersonDialog.razor" t="Include" />
             <e p="PersonForm.razor" t="Include" />
+            <e p="PetForm.razor" t="Include" />
           </e>
           <e p="EditAddress.razor" t="Include" />
           <e p="EditPerson.razor" t="Include" />
           <e p="Index.razor" t="Include" />
           <e p="NewAddress.razor" t="Include" />
           <e p="NewPerson.razor" t="Include" />
+          <e p="NewPet.razor" t="Include" />
           <e p="PersonsTable.razor" t="Include" />
         </e>
         <e p="PeopleDB.Client.csproj" t="IncludeRecursive" />
@@ -144,6 +146,10 @@
           <e p="20201209163902_FixingForeignKeys.Designer.cs" t="Include" />
           <e p="20201210002549_ChangePersonICollectionToList.cs" t="Include" />
           <e p="20201210002549_ChangePersonICollectionToList.Designer.cs" t="Include" />
+          <e p="20201210054241_AddConstraintsToPetModel.cs" t="Include" />
+          <e p="20201210054241_AddConstraintsToPetModel.Designer.cs" t="Include" />
+          <e p="20201210061326_FixPetModelRegNumberType.cs" t="Include" />
+          <e p="20201210061326_FixPetModelRegNumberType.Designer.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">

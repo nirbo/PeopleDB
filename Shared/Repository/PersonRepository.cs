@@ -38,7 +38,7 @@ namespace PeopleDB.Shared.Repository {
 
         public async Task<Person> CreatePerson(Person person) {
             await _dbContext.Persons.AddAsync(person);
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
             return person;
         }
 
@@ -55,7 +55,7 @@ namespace PeopleDB.Shared.Repository {
 
             _dbContext.Entry(person).State = EntityState.Modified;
             _dbContext.Persons.Update(person);
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
         }
 
         public async Task<string> DeletePerson(uint? id) {

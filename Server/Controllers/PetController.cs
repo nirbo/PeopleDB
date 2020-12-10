@@ -37,7 +37,7 @@ namespace PeopleDB.Server.Controllers {
             return Ok(pet);
         }
         
-        [HttpPost("Create")]
+        [HttpPost("Create/{id}")]
         public async Task<IActionResult> CreatePet([FromBody] Pet pet) {
             List<Pet> allPets = petRepository.GetAllPets()
                 .Where(p => p.PetRegistrationNumber == pet.PetRegistrationNumber)
@@ -51,7 +51,7 @@ namespace PeopleDB.Server.Controllers {
                 return BadRequest("An error has occurred, please try again");
             }
             
-            return Ok(createdPet);
+            return Ok(pet);
         }
         
         [HttpPut("Update")]
