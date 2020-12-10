@@ -7,7 +7,7 @@
 @if (emptyTable) {
     <MudPaper Class="d-flex flex-column align-center justify-center py-2 px-1 table-loading-mudpaper" Elevation="12">
         <MudText Typo="Typo.h5" Align="Align.Center">Add Your First Person!</MudText>
-        <MudButton Class="my-4" Color="Color.Success" Bu Size="Size.Large" StartIcon="@Filled.Add" Link="/person/new">Add Person</MudButton>
+        <MudButton Class="my-4 mt-8" Color="Color.Success" Bu Size="Size.Large" StartIcon="@Filled.Add" Link="/person/new">Add Person</MudButton>
     </MudPaper>
 } else {
     <MudTable Items="@AllPersons" Hover="true" Elevation="10" FixedHeader="true" Class="ma-4 pa-8" Filter="new Func<Person, bool>(SearchFilter)">
