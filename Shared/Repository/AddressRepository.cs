@@ -22,6 +22,7 @@ namespace PeopleDB.Shared.Repository {
         public async Task<Address> GetAddressById(uint? id) {
             Address address = await _dbContext.Addresses
                 .Include(a => a.Person)
+                .AsSplitQuery()
                 .FirstOrDefaultAsync(a => a.Id == id);
             if (address == null) {
                 return null;

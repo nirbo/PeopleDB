@@ -20,6 +20,7 @@ namespace PeopleDB.Shared.Repository {
                 .Include(p => p.Addresses)
                 .Include(p => p.Pets)
                 .Include(p => p.Vehicles)
+                .AsSplitQuery()
                 .ToList();
         }
 
@@ -28,6 +29,7 @@ namespace PeopleDB.Shared.Repository {
                 .Include(p => p.Addresses)
                 .Include(p => p.Pets)
                 .Include(p => p.Vehicles)
+                .AsSplitQuery()
                 .FirstOrDefaultAsync(p => p.Id == id);
             if (person == null) {
                 return null;
@@ -47,6 +49,7 @@ namespace PeopleDB.Shared.Repository {
                 .Include(p => p.Addresses)
                 .Include(p => p.Pets)
                 .Include(p => p.Vehicles)
+                .AsSplitQuery()
                 .FirstAsync(entry => entry.Id.Equals(person.Id));
 
             if (local != null) {
